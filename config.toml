@@ -3,6 +3,7 @@ relativeURLs = true
 languageCode = "th"
 title = "blog.kpping.me"
 theme = "blank"
+enableRobotsTXT = true
 
 [params]
   author = "kpping"
