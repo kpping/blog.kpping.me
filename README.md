@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.3
+1.0.4
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.4|add support for other outputs (e.g. rss), allow robot|
 |1.0.3|remove latest post from home|
 |1.0.2|remove broken links (css and rss), add author and desc. meta|
 |1.0.1|add Netlify deploy status badge|
