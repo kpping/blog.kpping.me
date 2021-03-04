@@ -1,0 +1,5 @@
+baseURL = "https://blog.kpping.me"
+relativeURLs = true
+languageCode = "th"
+title = "blog.kpping.me"
+theme = "blank"

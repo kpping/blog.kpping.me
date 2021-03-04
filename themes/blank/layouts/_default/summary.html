@@ -1,0 +1,12 @@
+<article>
+    <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+    <time>{{ .Date.Format "2006-01-02 15:04" }}</time>
+    <div>
+        <p>
+            {{ .Summary }}
+            {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}">อ่านต่อ ...</a>
+            {{ end }}
+        </p>
+    </div>
+</article>
