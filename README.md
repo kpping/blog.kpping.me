@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.4
+1.0.5
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.5|add support categories and tags, remove sidebar|
 |1.0.4|add support for other outputs (e.g. rss), allow robot|
 |1.0.3|remove latest post from home|
 |1.0.2|remove broken links (css and rss), add author and desc. meta|
