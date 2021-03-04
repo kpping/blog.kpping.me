@@ -8,6 +8,3 @@ enableRobotsTXT = true
 [params]
   author = "kpping"
   description = "My simple micro blog."
-
-[outputs]
-  page = ["HTML", "AMP"]
