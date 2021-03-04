@@ -2,6 +2,8 @@
 title: "การใช้ Cloudflare Proxy และ SSL/TLS แบบ Full (strict) กับ Netlify"
 date: 2021-03-04T12:10:36+07:00
 draft: false
+categories: [ฮาวทู]
+tags: [cloudflare, netlify]
 ---
 
 การตั้งค่าให้ Cloudflare DNS ชี้มาที่บล็อกนี้ (โฮสต์อยู่บน Netlify) ไม่ยาก แต่หากต้องการใช้ Proxy และ SSL/TLS แบบ Full (strict) ต้องมีการปรับค่าใน Netlify นิดนึง <!--more-->
