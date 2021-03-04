@@ -3,3 +3,7 @@ relativeURLs = true
 languageCode = "th"
 title = "blog.kpping.me"
 theme = "blank"
+
+[params]
+  author = "kpping"
+  description = "My simple micro blog."
