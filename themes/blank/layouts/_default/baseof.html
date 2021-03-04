@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default " en-us" }}">
+<html {{ if (.OutputFormats.Get "amp") }} amp {{ end }} lang="{{ .Site.LanguageCode | default " en-us" }}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ .Title }}</title>
+
     {{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}">{{ end }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+
     {{ with .Site.Params.author }}
-    <meta name="author" content="{{ . }}">{{ end }}
+    <meta name="author" content="{{ . }}">
+    {{ end }}
+
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}} 
+
+    {{ with .OutputFormats.Get "amp" }}
+    {{ block "amp-head-mark-up" . }}{{ end }}
+    {{ end }}
 </head>
 
 <body>
