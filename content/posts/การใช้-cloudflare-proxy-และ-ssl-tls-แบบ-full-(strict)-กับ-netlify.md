@@ -14,7 +14,7 @@ draft: false
 
 4. Login เข้าไปที่ Cloudflare และเลือกโดเมนที่ใช้กับเว็บไซต์ของเรา
 
-5. ไปที่ DNS เลือก Record ที่ชี้ไปเว็บไซต์ที่โฮสต์บน Netlify กด *Edit* แล้วปรับ Proxy Status จาก __DNS only__ เป็น __Proxied__
+5. ไปที่ *DNS* เลือก Record ที่ชี้ไปเว็บไซต์ที่โฮสต์บน Netlify กด *Edit* แล้วปรับ Proxy Status จาก __DNS only__ เป็น __Proxied__
 
 6. ไปที่ *SSL/TLS > Overview* เลือก Encyption mode เป็น Full (strict)
 
