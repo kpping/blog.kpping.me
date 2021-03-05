@@ -2,8 +2,8 @@
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
   <details>
     <summary>{{ partial "time.html" . }}</summary>
-    <p>{{ partial "categories-tags.html" . }}</p>
-    <a href="{{ .RelPermalink }}#disqus_thread" data-disqus-identifier="{{ .Page.File.UniqueID }}"></a>
+    <p>🏷️ {{ partial "categories-tags.html" . }}</p>
+    <p>💬 <a href="{{ .RelPermalink }}#disqus_thread" data-disqus-identifier="{{ .Page.File.UniqueID }}">ความคิดเห็น: 0</a></p>
   </details>
   <div>
     <p>
