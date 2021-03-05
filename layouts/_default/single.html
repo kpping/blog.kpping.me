@@ -11,9 +11,7 @@
     </div>
     <br>
     <hr>
-    <div>
-      {{ template "_internal/disqus.html" . }}
-    </div>
+    {{ partial "disqus-thread.html" . }}
   </article>
 </main>
 {{ end }}
