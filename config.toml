@@ -3,6 +3,7 @@ relativeURLs = true
 languageCode = "th"
 title = "blog.kpping.me"
 enableRobotsTXT = true
+disqusShortname = "blog-kpping-me"
 
 [params]
   author = "kpping"
