@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.12
+1.0.13
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.13|join webring|
 |1.0.12|add default comment count|
 |1.0.11|add comment count|
 |1.0.10|minify js in "disqus-thread.html", use only post ID to reference comment thread|
