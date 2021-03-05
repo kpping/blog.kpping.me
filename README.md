@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.7
+1.0.8
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.8|fix blocking disqus script|
 |1.0.7|use disqus for comment, change project structure, add editorconfig|
 |1.0.6|display blog description, add space and line before footer|
 |1.0.5|add support categories and tags, remove sidebar|
