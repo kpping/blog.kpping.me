@@ -1,0 +1,15 @@
+<article>
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  <details>
+    <summary>{{ partial "time.html" . }}</summary>
+    <p>{{ partial "categories-tags.html" . }}</p>
+  </details>
+  <div>
+    <p>
+      {{ .Summary }}
+      {{ if .Truncated }}
+      <a href="{{ .RelPermalink }}">อ่านต่อ ...</a>
+      {{ end }}
+    </p>
+  </div>
+</article>

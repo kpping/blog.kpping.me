@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main>
+  <article>
+    <h1>{{ .Title }}</h1>
+    <details>
+      <summary>{{ partial "time.html" . }}</summary>
+      <p>{{ partial "categories-tags.html" . }}</p>
+    </details>
+    <div>
+      {{ .Content }}
+    </div>
+    <br>
+    <hr>
+    <div>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </article>
+</main>
+{{ end }}
