@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.8
+1.0.9
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.9|change loading message to thai lang|
 |1.0.8|fix blocking disqus script|
 |1.0.7|use disqus for comment, change project structure, add editorconfig|
 |1.0.6|display blog description, add space and line before footer|
