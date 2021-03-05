@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.11
+1.0.12
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.12|add default comment count|
 |1.0.11|add comment count|
 |1.0.10|minify js in "disqus-thread.html", use only post ID to reference comment thread|
 |1.0.9|change loading message to thai lang|
