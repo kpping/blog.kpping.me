@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.9
+1.0.10
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.10|minify js in "disqus-thread.html", use only post ID to reference comment thread|
 |1.0.9|change loading message to thai lang|
 |1.0.8|fix blocking disqus script|
 |1.0.7|use disqus for comment, change project structure, add editorconfig|
