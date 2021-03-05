@@ -6,7 +6,7 @@ categories: [ฮาวทู]
 tags: [disqus, pagespeed, insights, score, hugo]
 ---
 
-เมื่อเปิดระบบแสดงความคิดเห็นของ Disqus บน Hugo และใช้ Internal Template จะพบว่าคะแนน PageSpeed Insights ตกลงทันที ! เราจะแก้ไขได้อย่างไร มาดูกัน <!--more-->
+เมื่อเปิดระบบแสดงความคิดเห็นของ Disqus บน Hugo และใช้ _{{ template "\_internal/disqus.html" . }}_ จะพบว่าคะแนน PageSpeed Insights ตกลงทันที ! เราจะแก้ไขได้อย่างไร มาดูกัน <!--more-->
 
 ## ทำไมคะแนนถึงตก
 
