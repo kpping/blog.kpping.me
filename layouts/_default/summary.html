@@ -3,6 +3,7 @@
   <details>
     <summary>{{ partial "time.html" . }}</summary>
     <p>{{ partial "categories-tags.html" . }}</p>
+    <a href="{{ .RelPermalink }}#disqus_thread" data-disqus-identifier="{{ .Page.File.UniqueID }}"></a>
   </details>
   <div>
     <p>
