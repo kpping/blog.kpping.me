@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.13
+1.0.14
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.14|move webring to partial, add comment count to single template|
 |1.0.13|join webring|
 |1.0.12|add default comment count|
 |1.0.11|add comment count|
