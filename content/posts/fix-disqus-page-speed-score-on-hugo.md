@@ -3,7 +3,7 @@ title: "แก้ปัญหาคะแนน PageSpeed Insights ตกเม�
 date: 2021-03-05T14:53:18+07:00
 draft: false
 categories: [ฮาวทู]
-tags: [disqus, pagespeed, insights, score, hugo]
+tags: [disqus, pagespeed, insights, score, hugo, คะแนน, lazyloading]
 ---
 
 เมื่อเปิดระบบแสดงความคิดเห็นของ Disqus บน Hugo และใช้ _{{ template "\_internal/disqus.html" . }}_ จะพบว่าคะแนน PageSpeed Insights ตกลงทันที ! เราจะแก้ไขได้อย่างไร มาดูกัน <!--more-->
