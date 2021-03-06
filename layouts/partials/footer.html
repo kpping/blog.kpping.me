@@ -1,6 +1,3 @@
 <footer>
-  <p>&copy; {{ now.Year }} | <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> | {{ .Site.Params.description }} | <a
-      href="https://webring.wonderful.software#{{ .Site.Title }}" title="วงแหวนเว็บ">
-      <img alt="วงแหวนเว็บ" width="16" height="16" src="https://webring.wonderful.software/webring.svg" />
-    </a></p>
+  <p>&copy; {{ now.Year }} | <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> | {{ .Site.Params.description }} | {{ partial "webring" . }}</p>
 </footer>
