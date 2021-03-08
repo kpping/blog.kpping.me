@@ -31,3 +31,14 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+// remove bluering on safari
+.no-bluering:focus {
+  outline: none;
+}
+
+.details--post-info {
+  margin-top: 5px;
+  background-color: #ffb95034;
+  border-radius: 5px;
+}
