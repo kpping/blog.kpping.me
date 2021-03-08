@@ -18,14 +18,14 @@ tags: [disqus, pagespeed, insights, score, hugo, คะแนน, lazyloading]
 
 1. สร้าง Partial Template ขึ้นมาใหม่เพื่อใช้แทนของเดิม
 
-> {{< gist kpping 8c547e3c9d0d7d6c141d68ade5b03e3e >}}
+{{< gist kpping 8c547e3c9d0d7d6c141d68ade5b03e3e >}}
 
 2. แปะโค้ดนี้ลงไป
 
-> {{< gist kpping 60f19bac5a684c9da91b6e991d9605f9 >}}
+{{< gist kpping 60f19bac5a684c9da91b6e991d9605f9 >}}
 
 3. นำ Partial Template นี้ไปใช้แทนของเดิม
 
-> {{< gist kpping c834ddd48d7c944700cb7eafe986f016 >}}
+{{< gist kpping c834ddd48d7c944700cb7eafe986f016 >}}
 
 เท่านี้คะแนน PageSpeed Insights ก็จะกลับมาสูงเหมือนเดิม 😎
