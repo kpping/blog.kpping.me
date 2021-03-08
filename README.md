@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.16
+1.0.17
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.17|optimize critical css|
 |1.0.16|giveup on no css website, it look terrible|
 |1.0.15|use target blank|
 |1.0.14|move webring to partial, add comment count to single template|
