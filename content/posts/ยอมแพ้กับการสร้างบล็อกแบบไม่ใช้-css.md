@@ -16,7 +16,7 @@ tags: [geek]
 
 ก็เลยขอยอมแพ้ ใช้ CSS แก้ปัญหาหน่อยละกัน
 
-เนื่องจากไม่มีเวลาเลือกเยอะก็เลยเอา Style Markdown ของ GitHub มาใช้เพราะอ่านง่ายและมีคน [Export](https://github.com/sindresorhus/github-markdown-css) ออกมาให้แล้ว
+เนื่องจากไม่มีเวลาเลือกเยอะก็เลยเอา Markdown Style (เฉพาะ CSS) ของ GitHub มาใช้เพราะอ่านง่ายและมีคน [Export](https://github.com/sindresorhus/github-markdown-css) ออกมาให้แล้ว
 
 การแสดงผลเพื่อให้โฟกัสได้ง่ายขึ้น เลยใช้การล็อคขนาด (max-width: 768px) + ตั้งให้อยู่กลางหน้าจอเสมอ
 
