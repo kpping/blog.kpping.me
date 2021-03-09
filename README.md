@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.18
+1.0.19
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.19|remove unnecessary css class|
 |1.0.18|decorate details.html partial, rename some css classes|
 |1.0.17|optimize critical css|
 |1.0.16|giveup on no css website, it look terrible|
