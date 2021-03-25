@@ -1,3 +1,3 @@
-#!/bin/bash 
+#!/bin/bash
 
-hugo serve -p 1313 --bind="0.0.0.0"
+hugo serve -D -p 1313 --bind="0.0.0.0"
