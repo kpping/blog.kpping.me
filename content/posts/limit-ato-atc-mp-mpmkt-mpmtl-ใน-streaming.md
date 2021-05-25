@@ -1,7 +1,7 @@
 ---
 title: "ชนิดคำสั่งซื้อขายต่าง ๆ (Limit, ATO, ATC, MP, MP-MKT, MP-MTL) ในโปรแกรมซื้อขายหุ้น Streaming "
 date: 2021-05-25T14:36:53+07:00
-draft: true
+draft: false
 categories: [ลงทุน]
 tags: [หุ้น, streaming, limit, ato, atc, mp, mpmkt, mpmtl]
 ---
