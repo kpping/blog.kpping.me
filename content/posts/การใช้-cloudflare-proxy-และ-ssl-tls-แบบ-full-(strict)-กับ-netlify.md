@@ -2,7 +2,7 @@
 title: "การใช้ Cloudflare Proxy และ SSL/TLS แบบ Full (strict) กับ Netlify"
 date: 2021-03-04T12:10:36+07:00
 draft: false
-categories: [ฮาวทู]
+categories: [geek]
 tags: [cloudflare, netlify]
 ---
 

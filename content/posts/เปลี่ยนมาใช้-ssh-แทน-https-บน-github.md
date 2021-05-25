@@ -2,7 +2,7 @@
 title: "เปลี่ยนมาใช้ SSH แทน HTTPS บน GitHub"
 date: 2021-03-25T16:35:59+07:00
 draft: false
-categories: [ฮาวทู]
+categories: [geek]
 tags: [git, github, ssh, https]
 ---
 

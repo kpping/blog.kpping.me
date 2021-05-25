@@ -2,7 +2,7 @@
 title: "แก้ปัญหาคะแนน PageSpeed Insights ตกเมื่อเปิดใช้ Disqus บน Hugo"
 date: 2021-03-05T14:53:18+07:00
 draft: false
-categories: [ฮาวทู]
+categories: [geek]
 tags: [disqus, pagespeed, insights, score, hugo, คะแนน, lazyloading]
 ---
 
