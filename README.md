@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.20
+1.0.21
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.21|decrase h1 size and weight, align pagination to right|
 |1.0.20|add -D flag to dev.sh to display draft content|
 |1.0.19|remove unnecessary css class|
 |1.0.18|decorate details.html partial, rename some css classes|
