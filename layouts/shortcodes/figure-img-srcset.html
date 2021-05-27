@@ -1,0 +1,22 @@
+{{ $href := .Get "href"}}
+{{ $src := .Get "src"}}
+{{ $width := .Get "width"}}
+{{ $height := .Get "height"}}
+{{ $srcset := .Get "srcset"}}
+{{ $alt := .Get "alt"}}
+{{ $caption := .Get "caption"}}
+<figure style="text-align: center;">
+  <a href="{{ $href }}">
+    <img
+      loading="lazy"
+      sizes="(min-width: 1280px) 15vw, (min-width: 1024px) 20vw, (min-width: 768px) 30vw, (min-width: 512px) 50vw, 100vw"
+      width="{{ $width }}"
+      height="{{ $height }}"
+      src="{{ $src }}"
+      srcset="{{.Inner}}"
+      alt="{{ $alt }}"/>
+  </a>
+  <figcaption>
+    <p>{{ $caption }}</p>
+  </figcaption>
+</figure>
