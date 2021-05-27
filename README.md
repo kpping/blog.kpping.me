@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.21
+1.0.22
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.22|fix referrer/opener security, add custom figure shortcode|
 |1.0.21|decrase h1 size and weight, align pagination to right|
 |1.0.20|add -D flag to dev.sh to display draft content|
 |1.0.19|remove unnecessary css class|
