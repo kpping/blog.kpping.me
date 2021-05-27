@@ -7,9 +7,13 @@
 {{ $caption := .Get "caption"}}
 <figure style="text-align: center;">
   <a href="{{ $href }}">
+    <style scoped>
+      img.figure-img-srcset{height:auto;width:100%}@media screen and (min-width:512px){img.figure-img-srcset{width:50%}}@media screen and (min-width:768px){img.figure-img-srcset{width:33%}}
+    </style>
+
     <img
+      class="figure-img-srcset"
       loading="lazy"
-      sizes="(min-width: 1280px) 15vw, (min-width: 1024px) 20vw, (min-width: 768px) 30vw, (min-width: 512px) 50vw, 100vw"
       width="{{ $width }}"
       height="{{ $height }}"
       src="{{ $src }}"
