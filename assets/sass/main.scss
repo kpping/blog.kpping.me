@@ -69,3 +69,32 @@ body {
     border-bottom: 1px solid #e1e4e8 !important;
   }
 }
+
+#user-engagement {
+  display: flex;
+  flex-direction: column-reverse;
+
+  #disqus_thread,
+  #related_contents {
+    flex: 1;
+  }
+
+  #related_contents {
+    padding-bottom: 1em;
+  }
+
+  @include md {
+    flex-direction: row;
+
+    #related_contents {
+      margin-left: 2em;
+      padding-left: 0.5em;
+      border-bottom: 0 !important;
+      border-left: 1px solid #e1e4e8;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

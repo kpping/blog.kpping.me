@@ -1,13 +1,13 @@
 {{ define "main" }}
 <main>
   <article>
-    <h1 style="font-size: 1.5em; line-height: 1.5em;">{{ .Title }}</h1>
+    <h1 style="font-size: 1.5em; line-height: 1.5em">{{ .Title }}</h1>
     {{ partial "post-meta.html" . }}
-    <div>
-      {{ .Content }}
+    <div>{{ .Content }}</div>
+    <hr />
+    <div id="user-engagement">
+      {{ partial "disqus-thread.html" . }} {{ partial "related-contents" . }}
     </div>
-    <hr>
-    {{ partial "disqus-thread.html" . }}
   </article>
 </main>
 {{ end }}
