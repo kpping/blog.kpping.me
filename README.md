@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.23
+1.0.24
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.24|update style and add ending-thank-you shortcode|
 |1.0.23|fix incorrect image aspect ratio|
 |1.0.22|fix referrer/opener security, add custom figure shortcode|
 |1.0.21|decrase h1 size and weight, align pagination to right|
