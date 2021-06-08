@@ -19,3 +19,9 @@ tags: [cloudflare, netlify]
 9. คัดลอก __Private Key__ ไปแปะที่ช่อง __Private Key__ บน Netlify
 10. ไปที่ *[SHA-256 RSA Certificate Chain (Digicert)](https://crt.sh/?d=2392142934)* และคัดลอกข้อมูลในไฟล์ไปแปะที่ช่อง __Intermediate certs__ บน Netlify
 11. กด *Install certificate* เป็นอันเสร็จสิ้น
+
+&nbsp;
+
+{{< ending-thank-you>}}
+Happy Coding ครับ
+{{< /ending-thank-you >}}

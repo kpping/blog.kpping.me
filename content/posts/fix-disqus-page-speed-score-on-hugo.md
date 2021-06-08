@@ -29,3 +29,9 @@ tags: [disqus, pagespeed, insights, score, hugo, คะแนน, lazyloading]
 {{< gist kpping c834ddd48d7c944700cb7eafe986f016 >}}
 
 เท่านี้คะแนน PageSpeed Insights ก็จะกลับมาสูงเหมือนเดิม 😎
+
+&nbsp;
+
+{{< ending-thank-you>}}
+Happy Tuning ครับ
+{{< /ending-thank-you >}}
