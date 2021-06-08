@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.25
+1.0.26
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.26|add related content section|
 |1.0.25|re-generate critical css|
 |1.0.24|update style and add ending-thank-you shortcode|
 |1.0.23|fix incorrect image aspect ratio|
