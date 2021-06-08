@@ -1,12 +1,10 @@
-<article>
-  <h1 style="font-size: 1.5em; font-weight: normal;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  {{ partial "details.html" . }}
-  <div>
-    <p>
-      {{ .Summary }}
-      {{ if .Truncated }}
-      <a href="{{ .RelPermalink }}">อ่านต่อ ...</a>
-      {{ end }}
-    </p>
+<article style="margin-bottom: 3em;">
+  <h1 style="font-size: 1.5em; font-weight: normal; line-height: 1.5em;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  {{ partial "post-meta.html" . }}
+  <div class="sm-text-align-justify">
+    {{ .Summary }}
+    {{ if .Truncated }}
+    <a href="{{ .RelPermalink }}">อ่านต่อ ...</a>
+    {{ end }}
   </div>
 </article>

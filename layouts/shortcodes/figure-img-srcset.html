@@ -2,13 +2,22 @@
 {{ $src := .Get "src"}}
 {{ $width := .Get "width"}}
 {{ $height := .Get "height"}}
-{{ $srcset := .Get "srcset"}}
 {{ $alt := .Get "alt"}}
 {{ $caption := .Get "caption"}}
-<figure style="text-align: center;">
+
+<figure style="text-align: center">
   <a href="{{ $href }}">
     <style scoped>
-      img.figure-img-srcset{height:auto;width:100%}@media screen and (min-width:512px){img.figure-img-srcset{width:50%}}@media screen and (min-width:768px){img.figure-img-srcset{width:33%}}
+      img.figure-img-srcset {
+        height: auto;
+        width: 100%;
+        border-radius: 3px;
+      }
+      @media screen and (min-width: 390px) {
+        img.figure-img-srcset {
+          width: 50%;
+        }
+      }
     </style>
 
     <img
@@ -18,7 +27,9 @@
       height="{{ $height }}"
       src="{{ $src }}"
       srcset="{{.Inner}}"
-      alt="{{ $alt }}"/>
+      alt="{{ $alt }}"
+      style="background-color: #eee;"
+    />
   </a>
   <figcaption>
     <p>{{ $caption }}</p>
