@@ -22,7 +22,7 @@ $screen-md-min: 680px;
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 
   @include md {
     background-image: radial-gradient(#dfdfdf 1px, transparent 0);
@@ -31,7 +31,7 @@ body {
 }
 
 .markdown-body {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
   padding: 0em 0.5em;
 
   @include md {
