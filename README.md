@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.28
+1.0.29
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.29|change background color, upgrade hugo version to 0.87.0|
 |1.0.28|change background color|
 |1.0.27|change background and foreground color|
 |1.0.26|add related content section|
