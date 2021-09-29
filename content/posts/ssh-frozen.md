@@ -1,5 +1,5 @@
 ---
-title: "SSH Frozen"
+title: "SSH Frozen (ค้าง / หลุด)"
 date: 2021-09-29T13:15:20+07:00
 draft: false
 categories: [geek]
