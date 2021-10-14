@@ -6,7 +6,7 @@ categories: [geek]
 tags: [oracle, vm, virtualbox, usb, ubuntu, linux]
 ---
 
-วิธีแก้ปัญหาสำหรับคนที่ใช้ VirtualBox บน Linux Host แล้วมีปัญหา VirtualBox หา USB Devices ไม่เจอ วิธีแก้คือให้ทำการเพิ่ม User เข้า `vboxusers` Group
+วิธีแก้ปัญหาสำหรับคนที่ใช้ VirtualBox บน Linux Host แล้วมีปัญหา VirtualBox หา USB Devices ไม่เจอ วิธีแก้คือให้ทำการเพิ่ม User เข้า `vboxusers` Group <!--more-->
 
 ```bash
 sudo adduser $USER vboxusers
