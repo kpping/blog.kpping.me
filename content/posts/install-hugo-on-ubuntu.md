@@ -18,7 +18,7 @@ tags: [gohugo, hugo, ubuntu, install, snap]
 1. `snap refresh hugo --channel=extended`
 2. `snap refresh hugo --channel=stable`
 
-*ข้อจำกัดของการติดตั้งผ่าน Snap คือตัว Hugo จะไม่สามารถเขียนไฟล์ได้หากโปรเจคไม่ได้อยู่ใน `$HOME` หรือ Directory ที่ผู้ใช้งานไม่ได้เป็นเจ้าของ
+*ข้อจำกัดของการติดตั้งผ่าน Snap คือตัว Hugo จะไม่สามารถเขียนไฟล์ได้หากโปรเจกต์ไม่ได้อยู่ใน `$HOME` หรือ Directory ที่ผู้ใช้งานไม่ได้เป็นเจ้าของ
 
 {{< ending-thank-you>}}
 Happy Coding ครับ
