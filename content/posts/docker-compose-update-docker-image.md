@@ -6,7 +6,7 @@ categories: [geek]
 tags: [docker, docker-compose, update, image]
 ---
 
-ทริคเล็ก ๆ สำหรับคนใช้ `docker-compose` เมื่อ docker image ที่เราใช้มีการอัปเดต เราสามารถใช้คำสั่งในตัว `docker-compose` เพื่อ `pull` image ล่าสุดลงมาทั้งชุดได้เลย สะดวกมาก ๆ
+ทริคเล็ก ๆ สำหรับคนใช้ `docker-compose` เมื่อ docker image ที่เราใช้มีการอัปเดต เราสามารถใช้คำสั่งในตัว `docker-compose` เพื่อ `pull` image ล่าสุดลงมาทั้งชุดได้เลย สะดวกมาก ๆ <!--more-->
 
 ```bash
 # update images
