@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.30
+1.0.31
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.31|change text-2em to text-h1|
 |1.0.30|add netlify status to footer|
 |1.0.29|change background color, upgrade hugo version to 0.87.0|
 |1.0.28|change background color|
