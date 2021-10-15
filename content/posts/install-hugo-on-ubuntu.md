@@ -20,6 +20,6 @@ tags: [gohugo, hugo, ubuntu, install, snap]
 
 \*ข้อจำกัดของการติดตั้งผ่าน Snap คือตัว Hugo จะไม่สามารถเขียนไฟล์ได้หากโปรเจกต์ไม่ได้อยู่ใน `$HOME` หรือ Directory ที่ผู้ใช้งานไม่ได้เป็นเจ้าของ
 
-{{< ending-thank-you>}}
+&nbsp;
+
 Happy Coding ครับ
-{{< /ending-thank-you >}}

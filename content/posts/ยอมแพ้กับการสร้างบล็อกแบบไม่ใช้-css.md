@@ -24,6 +24,4 @@ tags: [blog, บล็อก, css]
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Reading ครับ
-{{< /ending-thank-you >}}

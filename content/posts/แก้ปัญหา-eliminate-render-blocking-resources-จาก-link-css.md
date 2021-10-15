@@ -40,6 +40,4 @@ tags: [css, render, blocking, pagespeed, insights, score, คะแนน]
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Coding ครับ 😎
-{{< /ending-thank-you >}}

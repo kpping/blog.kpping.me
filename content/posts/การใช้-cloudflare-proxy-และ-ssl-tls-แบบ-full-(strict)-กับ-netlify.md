@@ -22,6 +22,4 @@ tags: [cloudflare, netlify]
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Coding ครับ
-{{< /ending-thank-you >}}

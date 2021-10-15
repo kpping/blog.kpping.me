@@ -32,6 +32,4 @@ tags: [disqus, pagespeed, insights, score, hugo, คะแนน, lazyloading]
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Tuning ครับ
-{{< /ending-thank-you >}}

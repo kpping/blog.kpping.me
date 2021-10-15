@@ -118,6 +118,4 @@ https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.j
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Investing ครับ
-{{< /ending-thank-you >}}

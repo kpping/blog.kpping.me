@@ -83,6 +83,4 @@ Warning: Permanently added the RSA host key for IP address '52.74.223.119' to th
 
 &nbsp;
 
-{{< ending-thank-you>}}
 Happy Committing ครับ 😎
-{{< /ending-thank-you >}}

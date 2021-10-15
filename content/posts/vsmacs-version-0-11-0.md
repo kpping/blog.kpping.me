@@ -16,6 +16,6 @@ Keybindings Emacs ที่ผมเขียนขึ้นมาใช้เ�
 
 [VSmacs Repo](https://github.com/kpping/vsmacs)
 
-{{< ending-thank-you>}}
+&nbsp;
+
 Happy Moving ครับ
-{{< /ending-thank-you >}}
