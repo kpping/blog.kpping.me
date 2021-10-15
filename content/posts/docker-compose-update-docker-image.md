@@ -18,4 +18,3 @@ docker-compose up -d
 # remove unused images
 docker image prune
 ```
-
