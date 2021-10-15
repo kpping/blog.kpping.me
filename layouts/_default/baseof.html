@@ -19,9 +19,13 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end }}
 
-  {{ with resources.Get "/sass/main.scss" | toCSS | minify }}
-  <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+    {{ with resources.Get "/sass/critical.scss" | toCSS | minify }}
+      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
+    {{ end }}
+
+    {{ with resources.Get "/sass/main.scss" | toCSS | minify }}
+      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
+    {{ end }}
 
   {{ with resources.Get "/sass/critical.scss" | toCSS | minify }}
   <style>{{ .Content | safeCSS }}</style>
