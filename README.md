@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.35
+1.0.36
 
 ## Change logs
 
 | Version | Detail                                                                          |
 | ------- | ------------------------------------------------------------------------------- |
+| 1.0.36  | fix rss template                                                                |
 | 1.0.35  | use full content rss                                                            |
 | 1.0.34  | use prettier to maintain code                                                   |
 | 1.0.33  | add lazy loading to images                                                      |
