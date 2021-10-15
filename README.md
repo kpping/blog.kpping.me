@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.31
+1.0.32
 
 ## Change logs
 
 |Version|Detail
 |---|---|
+|1.0.32|update hugo version, add width and height info for netlify status badge|
 |1.0.31|change text-2em to text-h1|
 |1.0.30|add netlify status to footer|
 |1.0.29|change background color, upgrade hugo version to 0.87.0|
