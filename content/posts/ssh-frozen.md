@@ -23,6 +23,6 @@ touch ~/.ssh/config
 chmod 644 ~/.ssh/config
 ```
 
-### ข้อมูลอ้างอิง
+#### ข้อมูลอ้างอิง
 
 [Ref.1](https://stackoverflow.com/questions/7210011/amazon-ec2-ssh-timeout-due-inactivity), [Ref.2](https://unix.stackexchange.com/questions/3026/what-do-options-serveraliveinterval-and-clientaliveinterval-in-sshd-config-d)
