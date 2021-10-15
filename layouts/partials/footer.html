@@ -1,6 +1,8 @@
 <footer>
   <p>
     &copy; {{ now.Year }} |
-    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> | {{ .Site.Params.description }} | {{ partial "webring" . }} | {{ partial "netlify-status" . }}
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> |
+    {{ .Site.Params.description }} | {{ partial "webring" . }} |
+    {{ partial "netlify-status" . }}
   </p>
 </footer>

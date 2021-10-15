@@ -1,9 +1,11 @@
 <div style="text-align: right;">
   {{ if .Paginator.HasPrev }}
-  <a href="{{ .Paginator.Prev.URL }}">กลับไป</a>
+    <a href="{{ .Paginator.Prev.URL }}">กลับไป</a>
   {{ end }}
-  หน้าที่ {{ .Paginator.PageNumber }} จากทั้งหมด {{ .Paginator.TotalPages }} หน้า
+  หน้าที่ {{ .Paginator.PageNumber }} จากทั้งหมด
+  {{ .Paginator.TotalPages }}
+  หน้า
   {{ if .Paginator.HasNext }}
-  <a href="{{ .Paginator.Next.URL }}">ต่อไป</a>
+    <a href="{{ .Paginator.Next.URL }}">ต่อไป</a>
   {{ end }}
 </div>

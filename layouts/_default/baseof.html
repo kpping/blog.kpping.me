@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{ .Title }}</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Title }}</title>
+    {{ with .Site.Params.description }}
+      <meta name="description" content="{{ . }}" />
+    {{ end }}
 
-  {{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}">
-  {{ end }}
+    {{ with .Site.Params.author }}
+      <meta name="author" content="{{ . }}" />
+    {{ end }}
 
-  {{ with .Site.Params.author }}
-  <meta name="author" content="{{ . }}">
-  {{ end }}
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
 
-  {{ range .AlternativeOutputFormats -}}
-  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end }}
+    {{ with resources.Get "/sass/critical.scss" | toCSS | minify }}
+      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
+    {{ end }}
 
-  {{ with resources.Get "/sass/main.scss" | toCSS | minify }}
-  <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+    {{ with resources.Get "/sass/main.scss" | toCSS | minify }}
+      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
+    {{ end }}
 
-  {{ with resources.Get "/sass/critical.scss" | toCSS | minify }}
-  <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous" media="print" onload="this.media='all'"/>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+      integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg=="
+      crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
 
-<body>
-  <div class="markdown-body">
-    {{ partial "header" . }}
-    {{ block "main" . }}{{ end }}
-    <hr>
-    {{ partial "footer" . }}
-  </div>
+  <body>
+    <div class="markdown-body">
+      {{ partial "header" . }}
+      {{ block "main" . }}{{ end }}
+      <hr />
+      {{ partial "footer" . }}
+    </div>
   <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" defer></script>
-</body>
-
+  </body>
 </html>

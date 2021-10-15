@@ -19,8 +19,8 @@ ServerAliveInterval 50
 หากใครไม่มี File `~/.ssh/config` นี้ สามารถสร้างได้ด้วยคำสั่ง
 
 ```bash
-touch `~/.ssh/config`
-chmod 644 `~/.ssh/config`
+touch ~/.ssh/config
+chmod 644 ~/.ssh/config
 ```
 
 ### ข้อมูลอ้างอิง

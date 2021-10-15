@@ -1,0 +1,28 @@
+{
+  "name": "blog.kpping.me",
+  "version": "1.0.34",
+  "description": "My simple micro blog",
+  "scripts": {
+    "test": "npx prettier --check .",
+    "fix": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpping/blog.kpping.me.git"
+  },
+  "keywords": [
+    "blog.kpping.me",
+    "blog",
+    "kpping"
+  ],
+  "author": "kpping",
+  "license": "kpping",
+  "bugs": {
+    "url": "https://github.com/kpping/blog.kpping.me/issues"
+  },
+  "homepage": "https://github.com/kpping/blog.kpping.me#readme",
+  "devDependencies": {
+    "prettier": "2.4.1",
+    "prettier-plugin-go-template": "0.0.11"
+  }
+}

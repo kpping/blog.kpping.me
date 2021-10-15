@@ -1,12 +1,12 @@
-{{ $href := .Get "href"}}
-{{ $src := .Get "src"}}
-{{ $width := .Get "width"}}
-{{ $height := .Get "height"}}
-{{ $alt := .Get "alt"}}
-{{ $caption := .Get "caption"}}
-
+{{ $href := .Get "href" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
 <figure style="text-align: center">
   <a href="{{ $href }}">
+    {{/* full width on mobile screen else 50%; */}}
     <style scoped>
       img.figure-img-srcset {
         height: auto;
@@ -26,7 +26,7 @@
       width="{{ $width }}"
       height="{{ $height }}"
       src="{{ $src }}"
-      srcset="{{.Inner}}"
+      srcset="{{ .Inner }}"
       alt="{{ $alt }}"
       style="background-color: #f1f1f1;"
     />

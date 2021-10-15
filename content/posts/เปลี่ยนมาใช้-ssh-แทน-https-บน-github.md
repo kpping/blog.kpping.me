@@ -79,7 +79,7 @@ Warning: Permanently added the RSA host key for IP address '52.74.223.119' to th
 
 ## ข้อควรระวัง
 
-หาก `/home/kpping/.ssh/github` __หาย__ หรือ __หลุดไปสาธารณะ__ ให้รีบเข้าไป Revoke (Delete) ในบัญชี GitHub ของเรานะครับ เพื่อความปลอดภัยของบัญชีเราครับ
+หาก `/home/kpping/.ssh/github` **หาย** หรือ **หลุดไปสาธารณะ** ให้รีบเข้าไป Revoke (Delete) ในบัญชี GitHub ของเรานะครับ เพื่อความปลอดภัยของบัญชีเราครับ
 
 &nbsp;
 

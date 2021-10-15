@@ -1,12 +1,13 @@
 <div id="related_contents">
-  {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with $related }}
-  <p style="font-weight: bold; font-size: 1.04em; color: rgb(42, 46, 46)">
-    บทความอื่น ๆ ที่คุณอาจสนใจ
-  </p>
-  <ul>
-    {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+    <p style="font-weight: bold; font-size: 1.04em; color: rgb(42, 46, 46)">
+      บทความอื่น ๆ ที่คุณอาจสนใจ
+    </p>
+    <ul>
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
   {{ end }}
 </div>
