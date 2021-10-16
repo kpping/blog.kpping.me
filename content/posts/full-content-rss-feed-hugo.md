@@ -38,4 +38,6 @@ tags: [gohugo, hugo, rss, feed, full]
 
 ## Final Code
 
+[see code](https://gist.github.com/kpping/b4b5fd559555669dc4ff559d4f3e9bb8)
+
 {{< gist kpping b4b5fd559555669dc4ff559d4f3e9bb8 >}}
