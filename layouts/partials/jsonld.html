@@ -1,60 +1,61 @@
-{{/* https://vilcins.medium.com/json-ld-for-hugo-7e7f53cd6f39 */}}
 {{ if .IsHome -}}
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}",
-    "license": "{{ .Site.Params.Copyright }}"
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": {{ .Site.Title }},
+  "url": {{ .Site.BaseURL }},
+  "description": {{ .Site.Params.description }},
+  "thumbnailUrl": {{ .Site.Params.Logo | absURL }},
+  "license": {{ .Site.Params.Copyright }}
 }
 </script>
 {{ else if .IsPage }}
-{{ $author :=  or (.Params.author) (.Site.Author.name) }}
-{{ $organization :=  .Site.Title }}
+{{ $author := or (.Params.author) (.Site.Author.name) }}
+{{ $organization := .Site.Title }}
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "articleSection": "{{ .Section }}",
-    "name": "{{ .Title | safeJS }}",
-    "headline": "{{ .Title | safeJS }}",
-    "alternativeHeadline": "{{ .Params.lead }}",
-    "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
-    "isFamilyFriendly": "true",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
-    },
-    "author" : {
-        "@type": "Person",
-        "name": "{{ or ($author) (.Site.Params.author) }}"
-    },
-    "creator" : {
-        "@type": "Person",
-        "name": "{{ or ($author) (.Site.Params.author) }}"
-    },
-    "accountablePerson" : {
-        "@type": "Person",
-        "name": "{{ or ($author) (.Site.Params.author) }}"
-    },
-    "copyrightHolder" : "{{ $organization }}",
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "publisher":{
-        "@type":"Organization",
-        "name": {{ $organization }},
-        "url": {{ .Site.BaseURL }}
-    },
-    "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
-    "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "genre" : [ {{ range $index, $categories := .Params.categories }}{{ if $index }}, {{ end }}"{{ $categories }}" {{ end }}],
-    "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "articleSection": {{ .Section }},
+  "name": {{ .Title }},
+  "headline": {{ .Title }},
+  "alternativeHeadline": {{ .File.BaseFileName }},
+  "description": {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage }}{{ .Summary  }}{{ end }}{{ end }},
+  "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+  "isFamilyFriendly": true,
+  "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink }}
+  },
+  "author" : {
+      "@type": "Person",
+      "name": {{ or ($author) (.Site.Params.author) }}
+  },
+  "creator" : {
+      "@type": "Person",
+      "name": {{ or ($author) (.Site.Params.author) }}
+  },
+  "accountablePerson" : {
+      "@type": "Person",
+      "name": {{ or ($author) (.Site.Params.author) }}
+  },
+  "copyrightHolder" : {{ $organization }},
+  "copyrightYear" : {{ .Date.Format "2006" }},
+  "dateCreated": {{ .Date.Format "2006-01-02T15:04:05.00Z" }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05.00Z" }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05.00Z" }},
+  "publisher":{
+      "@type":"Organization",
+      "name": {{ $organization }},
+      "url": {{ .Site.BaseURL }},
+      "logo": {{ .Site.Params.Logo | absURL }}
+  },
+  "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{ .Site.Params.Logo | absURL }}{{ end }},
+  "url" : {{ .Permalink }},
+  "wordCount" : {{ .WordCount }},
+  "genre" : [ {{ range $index, $categories := .Params.categories }}{{ if $index }}, {{ end }}"{{ $categories }}" {{ end }}],
+  "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
 }
 </script>
 {{ end }}
