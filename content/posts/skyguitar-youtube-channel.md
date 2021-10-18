@@ -14,6 +14,6 @@ tags: [skyguitar, guitar, fingerstyle, youtube]
 
 [Youtube Channel: SkyGuitar](https://www.youtube.com/c/SkyGuitar/videos)
 
-{{< youtube V2xc4yq8aiE >}}
+{{< youtube-lt V2xc4yq8aiE >}}
 
 <!--more-->
