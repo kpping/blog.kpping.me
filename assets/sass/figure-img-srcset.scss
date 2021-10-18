@@ -4,10 +4,14 @@
 .figure-img-srcset {
   height: auto;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #f1f1f1;
 
   @include sm {
+    width: 66%;
+  }
+
+  @include md {
     width: 50%;
   }
 }

@@ -1,4 +1,16 @@
+@import "./mixin.scss";
+
 // https://stackoverflow.com/a/62364405
+
+.youtube-lt {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @include md {
+    width: 50%;
+  }
+}
 
 .youtube-lt-placeholder-image {
   height: auto;
