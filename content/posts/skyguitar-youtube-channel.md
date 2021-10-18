@@ -2,8 +2,8 @@
 title: "Sky Guitar, Youtube Channel ดี ๆ สำหรับสาย Finger Style"
 date: 2021-10-16T20:18:48+07:00
 draft: false
-categories: [guitar]
-tags: [skyguitar, guitar, fingerstyle, youtube]
+categories: [กีต้าร์]
+tags: [skyguitar, guitar, กีต้าร์, fingerstyle, youtube]
 ---
 
 อยู่ ๆ ก็อยากกลับมาเล่นกีตาร์ เลยลองเปิดหาวิดีโอสอนเล่น Cannon in C ง่าย ๆ เพื่อเริ่มฝึกอีกครั้ง แล้วก็ได้พบ Channel ดี ๆ ที่อยากแชร์ให้ผู้อ่านทุกคนลองเข้าไปฟังกัน
