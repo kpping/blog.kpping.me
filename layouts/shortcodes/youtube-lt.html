@@ -1,9 +1,14 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
-<div
-  class="youtube-lt"
-  data-embed="{{ $id }}"
-  style="position: relative;"
-  onclick="
+<div>
+  {{ with resources.Get "/sass/youtube-lt.scss" | toCSS | minify }}
+    {{ (printf "<style scoped>%s</style>" (.Content | safeCSS)) | safeHTML }}
+  {{ end }}
+
+
+  <div
+    class="youtube-lt"
+    data-embed="{{ $id }}"
+    onclick="
     var iframe = document.createElement('iframe');
     iframe.setAttribute('title', 'YouTube video player');
     iframe.setAttribute('class', 'youtube-lt-iframe');
@@ -14,41 +19,37 @@
     this.appendChild(iframe);
     this.removeAttribute('onclick');
   "
->
-  {{ with resources.Get "/sass/youtube-lt.scss" | toCSS | minify }}
-    {{ (printf "<style scoped>%s</style>" (.Content | safeCSS)) | safeHTML }}
-  {{ end }}
-
-
-  <picture>
-    {{/* <source
-      srcset="https://img.youtube.com/vi/{{ $id
-    }}/maxresdefault.jpg"
-    media="(min-width: 1280px)" /> */}}
-    <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/sddefault.jpg"
-      media="(min-width: 640px)"
-    />
-    <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg"
-      media="(min-width: 480px)"
-    />
-    <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/mqdefault.jpg"
-      media="(min-width: 320px)"
-    />
-    <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/default.jpg"
-      media="(min-width: 120px)"
-    />
-    <img
-      class="youtube-lt-placeholder-image"
-      load="lazy"
-      width="680"
-      height="480"
-      src="https://img.youtube.com/vi/{{ $id }}/sddefault.jpg"
-      alt="placeholder for youtube {{ $id }}"
-    />
-  </picture>
-  <div class="youtube-lt-play-button"></div>
+  >
+    <picture>
+      {{/* <source
+        srcset="https://img.youtube.com/vi/{{ $id
+      }}/maxresdefault.jpg"
+      media="(min-width: 1280px)" /> */}}
+      <source
+        srcset="https://img.youtube.com/vi/{{ $id }}/sddefault.jpg"
+        media="(min-width: 640px)"
+      />
+      <source
+        srcset="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg"
+        media="(min-width: 480px)"
+      />
+      <source
+        srcset="https://img.youtube.com/vi/{{ $id }}/mqdefault.jpg"
+        media="(min-width: 320px)"
+      />
+      <source
+        srcset="https://img.youtube.com/vi/{{ $id }}/default.jpg"
+        media="(min-width: 120px)"
+      />
+      <img
+        class="youtube-lt-placeholder-image"
+        load="lazy"
+        width="680"
+        height="480"
+        src="https://img.youtube.com/vi/{{ $id }}/sddefault.jpg"
+        alt="placeholder for youtube {{ $id }}"
+      />
+    </picture>
+    <div class="youtube-lt-play-button"></div>
+  </div>
 </div>
