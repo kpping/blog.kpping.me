@@ -11,15 +11,32 @@
 
 
   <a href="{{ $href }}">
-    <img
+    {{/* <img
       class="figure-img-srcset"
       loading="lazy"
-      width="{{ $width }}"
-      height="{{ $height }}"
-      src="{{ $src }}"
-      srcset="{{ .Inner }}"
-      alt="{{ $alt }}"
-    />
+      width="{{ $width
+    }}"
+    height="{{ $height }}" src="{{ $src }}" srcset="{{ .Inner }}"
+    alt="{{ $alt }}" /> */}}
+    <picture>
+      {{ range (split .Inner ",") }}
+        {{ $source := (split . " ") }}
+        {{ $srcset := index $source 0 }}
+        {{ $media := index $source 1 }}
+        <source
+          srcset="{{ $srcset }}"
+          media="(min-width: {{ replace $media "w" "px" }})"
+        />
+      {{ end }}
+      <img
+        class="figure-img-srcset"
+        loading="lazy"
+        width="{{ $width }}"
+        height="{{ $height }}"
+        src="{{ $src }}"
+        alt="{{ $alt }}"
+      />
+    </picture>
   </a>
   <figcaption>
     <p>{{ $caption }}</p>
