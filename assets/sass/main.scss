@@ -1,25 +1,4 @@
-$screen-sm-min: 390px;
-$screen-md-min: 680px;
-
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    box-shadow: inset $top $left $blur $color;
-  } @else {
-    box-shadow: $top $left $blur $color;
-  }
-}
+@import "./mixin.scss";
 
 body {
   background-color: #fcfcfc;

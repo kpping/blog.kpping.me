@@ -1,0 +1,13 @@
+@import "./mixin.scss";
+
+// full width on mobile screen else 50%;
+.figure-img-srcset {
+  height: auto;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+
+  @include sm {
+    width: 50%;
+  }
+}

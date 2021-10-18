@@ -5,21 +5,12 @@
 {{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
 <figure style="text-align: center">
-  <a href="{{ $href }}">
-    {{/* full width on mobile screen else 50%; */}}
-    <style scoped>
-      img.figure-img-srcset {
-        height: auto;
-        width: 100%;
-        border-radius: 3px;
-      }
-      @media screen and (min-width: 390px) {
-        img.figure-img-srcset {
-          width: 50%;
-        }
-      }
-    </style>
+  {{ with resources.Get "/sass/figure-img-srcset.scss" | toCSS | minify }}
+    {{ (printf "<style scoped>%s</style>" (.Content | safeCSS)) | safeHTML }}
+  {{ end }}
 
+
+  <a href="{{ $href }}">
     <img
       class="figure-img-srcset"
       loading="lazy"
@@ -28,7 +19,6 @@
       src="{{ $src }}"
       srcset="{{ .Inner }}"
       alt="{{ $alt }}"
-      style="background-color: #f1f1f1;"
     />
   </a>
   <figcaption>
