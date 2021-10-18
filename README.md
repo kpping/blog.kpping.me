@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.41
+1.0.42
 
 ## Change logs
 
 | Version | Detail                                                                          |
 | ------- | ------------------------------------------------------------------------------- |
+| 1.0.42  | disable big image                                                               |
 | 1.0.41  | test change image srcset to picture source                                      |
 | 1.0.40  | attempt to solve youtube page speed issue, extract some inline styles           |
 | 1.0.39  | add site logo, fix some json-ld bugs                                            |
