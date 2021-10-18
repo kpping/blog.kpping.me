@@ -1,6 +1,6 @@
 {
   "name": "blog.kpping.me",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "description": "My simple micro blog",
   "scripts": {
     "test": "npx prettier --check .",
