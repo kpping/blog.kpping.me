@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.0.37
+1.0.38
 
 ## Change logs
 
 | Version | Detail                                                                          |
 | ------- | ------------------------------------------------------------------------------- |
+| 1.0.38  | add json-ld to improve seo                                                      |
 | 1.0.37  | remove ending-thank-you shortcode                                               |
 | 1.0.36  | fix rss template                                                                |
 | 1.0.35  | use full content rss                                                            |
