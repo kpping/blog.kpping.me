@@ -1,6 +1,6 @@
 <header>
-  <a href="{{ .Site.BaseURL }}"
-    ><img
+  <a href="{{ .Site.BaseURL }}" style="position: relative;">
+    <img
       src="/favicon-32x32.png"
       loading="lazy"
       width="32px"
@@ -8,8 +8,8 @@
       alt="logo"
       style="vertical-align: middle; margin-right: 5px;"
     />
-    <span>{{ .Site.Title }}</span></a
-  >
+    <span style="position: relative; top: 1px;">{{ .Site.Title }}</span>
+  </a>
   {{ with .Site.Menus.main }}
     <nav>
       <ul>
