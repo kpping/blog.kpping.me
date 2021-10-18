@@ -15,10 +15,10 @@ width="400"
 height="866"
 alt="order type in streaming menu"
 caption="ชนิดคำสั่งซื้อขาย" >}}
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x.jpg 100w,
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x.jpg 200w,
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg 768w,
 https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x.jpg 400w,
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg 768w
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x.jpg 200w,
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x.jpg 100w
 {{< /figure-img-srcset >}}
 
 ในหน้าต่าง `Buy/Sell` ตรงข้าง ๆ ช่อง `Price` จะมีตัวเลือกชนิดคำสั่งซื้อขายอยู่ ซึ่งค่าเริ่มต้นจะเป็น `Limit` เราสามารถกดเพื่อเปลี่ยนชนิดได้ <!--more-->
