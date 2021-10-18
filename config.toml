@@ -8,3 +8,4 @@ disqusShortname = "blog-kpping-me"
 [params]
   author = "kpping"
   description = "My simple micro blog."
+  copyright = "kpping"
