@@ -8,17 +8,18 @@ tags: [หุ้น, streaming, limit, ato, atc, mp, mpmkt, mpmtl]
 
 โปรแกรม `Streaming` เป็นโปรแกรมพื้นฐานสำหรับทำการซื้อขายหุ้นด้วยตัวเอง แต่ถึงจะบอกว่าพื้นฐาน ก็ถือว่าเข้าใจยากสำหรับผู้เริ่มใช้งาน (อาจจะเป็นแค่ผมก็ได้ 555) หลาย ๆ บทความก็อ่านแล้วมึน ๆ โดยเฉพาะชนิดคำสั่งซื้อขาย (Order Type) วันนี้ผมเลยจะมาจดสรุปความหมายและวิธีใช้งานในแบบของผมให้อ่านกันครับ
 
+<!-- https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg -->
+
 {{< figure-img-srcset
 href="https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg"
-src="https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x.jpg"
+src="https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg"
 width="400"
 height="866"
 alt="order type in streaming menu"
 caption="ชนิดคำสั่งซื้อขาย" >}}
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg 768w,
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x.jpg 400w,
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x.jpg 200w,
-https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x.jpg 100w
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg 400w,
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg 200w,
+https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x-1.jpg 100w,
 {{< /figure-img-srcset >}}
 
 ในหน้าต่าง `Buy/Sell` ตรงข้าง ๆ ช่อง `Price` จะมีตัวเลือกชนิดคำสั่งซื้อขายอยู่ ซึ่งค่าเริ่มต้นจะเป็น `Limit` เราสามารถกดเพื่อเปลี่ยนชนิดได้ <!--more-->
