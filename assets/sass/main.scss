@@ -155,14 +155,9 @@ body {
 #related-content {
   flex: 1;
   flex-basis: 0;
-  text-align: center;
 
   p {
-    display: inline-block;
-  }
-
-  ul {
-    text-align: left;
+    text-align: center;
   }
 
   @include respond-to("md") {
