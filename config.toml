@@ -1,12 +1,14 @@
+# https://gohugo.io/variables/site/
+
 baseURL = "https://blog.kpping.me"
-relativeURLs = true
-languageCode = "th"
-title = "blog.kpping.me"
-enableRobotsTXT = true
+copyright = "kpping"
 disqusShortname = "blog-kpping-me"
+enableRobotsTXT = true
+relativeURLs = true
+title = "blog.kpping.me"
 
 [params]
   author = "kpping"
   description = "My simple micro blog."
-  copyright = "kpping"
+  homepageKeywords = ["blog.kpping.me", "blog", "kpping"]
   logo = "/apple-icon-114x114.png"
