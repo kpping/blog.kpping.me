@@ -79,6 +79,19 @@
       />
     {{ end }}
 
+    {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $criticalStyle.RelPermalink }}"
+      integrity="{{ $criticalStyle.Data.Integrity }}"
+    />
+
+    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $mainStyle.RelPermalink }}"
+      integrity="{{ $mainStyle.Data.Integrity }}"
+    />
 
     <link
       rel="stylesheet"
@@ -86,6 +99,8 @@
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
 
     <link
@@ -94,13 +109,8 @@
       integrity="sha512-2ZxkJRe/dlKUknBZJNP93bh08JvvuvL+fR6I3IqZ4tnAvNQ0D56+LVg+DvE/S/Ir4J/6lxBu/Xye1z243BEa1Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-
-    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
-    <link
-      rel="stylesheet"
-      href="{{ $mainStyle.RelPermalink }}"
-      integrity="{{ $mainStyle.Data.Integrity }}"
+      media="print"
+      onload="this.media='all'"
     />
   </head>
 
