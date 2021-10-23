@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.1.0
+1.1.1
 
 ## Change logs
 
 | Version | Detail                                                                          |
 | ------- | ------------------------------------------------------------------------------- |
+| 1.1.1   | tuning site score                                                               |
 | 1.1.0   | adjust responsive size, extract css, update html structure                      |
 | 1.0.44  | adjust responsive size                                                          |
 | 1.0.43  | move site name down 1px                                                         |
