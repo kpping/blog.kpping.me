@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="th">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{ .Title }}</title>
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
@@ -48,46 +48,68 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
-    {{ with .Site.Params.description }}
-      <meta name="description" content="{{ . }}" />
-    {{ end }}
+    <title>{{ .Title }}</title>
 
-    {{ with .Site.Params.author }}
-      <meta name="author" content="{{ . }}" />
-    {{ end }}
+    <meta
+      name="description"
+      content="{{ default .Site.Params.description (.Page.Summary | plainify) }}
+      "
+    />
+
+    <meta
+      name="author"
+      content="{{ default .Site.Params.author (.Params.author) }}"
+    />
+
+    <meta name="copyright" content="{{ .Site.Title }}" />
+
+    <meta name="license" content="{{ .Site.Copyright }}" />
+
+    {{ $keywords := default .Site.Params.homepageKeywords (.Params.tags) }}
+    <meta name="keywords" content="{{ delimit $keywords ", " }}" />
+
+    {{ partial "jsonld" . }}
 
     {{ range .AlternativeOutputFormats -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end }}
-
-    {{ with resources.Get "/sass/critical.scss" | toCSS | minify }}
-      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
-    {{ end }}
-
-    {{ with resources.Get "/sass/main.scss" | toCSS | minify }}
-      {{ (printf "<style>%s</style>" (.Content | safeCSS)) | safeHTML }}
+      <link
+        rel="{{ .Rel }}"
+        type="{{ .MediaType.Type }}"
+        href="{{ .Permalink }}"
+        title="{{ $.Site.Title }}"
+      />
     {{ end }}
 
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
-      integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
-      media="print"
-      onload="this.media='all'"
+      referrerpolicy="no-referrer"
     />
 
-    {{ partial "jsonld" . }}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.0.0/github-markdown-light.min.css"
+      integrity="sha512-2ZxkJRe/dlKUknBZJNP93bh08JvvuvL+fR6I3IqZ4tnAvNQ0D56+LVg+DvE/S/Ir4J/6lxBu/Xye1z243BEa1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $mainStyle.RelPermalink }}"
+      integrity="{{ $mainStyle.Data.Integrity }}"
+    />
   </head>
 
   <body>
-    <div class="markdown-body">
-      {{ partial "header" . }}
+    <div id="base-container" class="markdown-body">
+      {{ partial "base-header" . }}
       {{ block "main" . }}{{ end }}
-      <hr />
-      {{ partial "footer" . }}
+      <hr class="thin-line" />
+      {{ partial "base-footer" . }}
     </div>
-  <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" defer></script>
   </body>
 </html>

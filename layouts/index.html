@@ -1,7 +1,17 @@
 {{ define "main" }}
-  <main>
+  <main id="inner-content">
+    <h1 class="border-bottom-0 text-align-center">บทความทั้งหมด</h1>
     {{ range .Paginator.Pages }}
-      {{ .Render "summary" }}
+      <article>
+        <a href="{{ .RelPermalink }}">
+          <h2>{{ .Title }}</h2>
+        </a>
+        {{ partial "post-meta.html" . }}
+        <p>{{ .Summary }}</p>
+        {{ if .Truncated }}
+          <a href="{{ .RelPermalink }}">อ่านต่อ ...</a>
+        {{ end }}
+      </article>
     {{ end }}
     {{ partial "pagination.html" . }}
   </main>

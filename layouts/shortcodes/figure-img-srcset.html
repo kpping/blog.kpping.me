@@ -1,23 +1,15 @@
-{{ $href := .Get "href" }}
-{{ $width := .Get "width" }}
-{{ $height := .Get "height" }}
-{{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
 {{ $caption := .Get "caption" }}
-<figure style="text-align: center">
-  {{ with resources.Get "/sass/figure-img-srcset.scss" | toCSS | minify }}
-    {{ (printf "<style scoped>%s</style>" (.Content | safeCSS)) | safeHTML }}
-  {{ end }}
-
-
+{{ $height := .Get "height" }}
+{{ $href := .Get "href" }}
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" }}
+<figure class="figure-img-srcset">
   <a href="{{ $href }}">
-    {{/* <img
-      class="figure-img-srcset"
-      loading="lazy"
-      width="{{ $width
-    }}"
-    height="{{ $height }}" src="{{ $src }}" srcset="{{ .Inner }}"
-    alt="{{ $alt }}" /> */}}
+    {{/* old code, using srcset */}}
+    {{/* <img loading="lazy" width="{{ $width }}" height="{{ $height }}"
+    src="{{ $src }}" srcset="{{ .Inner }}" alt="{{ $alt }}" /> */}}
+    {{/* new code using source */}}
     <picture>
       {{ range (split .Inner ",") }}
         {{ $source := (split . " ") }}
@@ -29,7 +21,6 @@
         />
       {{ end }}
       <img
-        class="figure-img-srcset"
         loading="lazy"
         width="{{ $width }}"
         height="{{ $height }}"
