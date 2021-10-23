@@ -155,16 +155,20 @@ body {
 #related-content {
   flex: 1;
   flex-basis: 0;
+  text-align: center;
+
+  p {
+    display: inline-block;
+  }
+
+  ul {
+    text-align: left;
+  }
 
   @include respond-to("md") {
     margin-left: 2em;
     padding-left: 0.5em;
     border-left: 1px solid $markdown-body-border-color;
-
-    p {
-      text-align: center;
-      font-weight: bold;
-    }
   }
 }
 
@@ -184,9 +188,13 @@ body {
   .border-bottom-0 {
     border-bottom: 0;
   }
+
+  hr.thin-line {
+    height: 1px;
+    color: $markdown-body-border-color;
+  }
 }
 
-hr.thin-line {
-  height: 1px;
-  color: $markdown-body-border-color;
+.end-article-padding-bottom {
+  padding-bottom: 3em;
 }
