@@ -78,18 +78,15 @@
       />
     {{ end }}
 
-    {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS }}
+    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS }}
+    {{ $bundleStyle := (slice $criticalStyle $mainStyle | resources.Concat "sass/bundle.css") | resources.Minify |
+      resources.Fingerprint "sha512"
+    }}
     <link
       rel="stylesheet"
-      href="{{ $criticalStyle.RelPermalink }}"
-      integrity="{{ $criticalStyle.Data.Integrity }}"
-    />
-
-    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
-    <link
-      rel="stylesheet"
-      href="{{ $mainStyle.RelPermalink }}"
-      integrity="{{ $mainStyle.Data.Integrity }}"
+      href="{{ $bundleStyle.RelPermalink }}"
+      integrity="{{ $bundleStyle.Data.Integrity }}"
     />
 
     <link
