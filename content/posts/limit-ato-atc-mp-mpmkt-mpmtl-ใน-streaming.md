@@ -16,7 +16,7 @@ src="https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r4
 width="400"
 height="866"
 alt="order type in streaming menu"
-caption="ชนิดคำสั่งซื้อขาย" >}}
+caption="รูป: ชนิดคำสั่งซื้อขาย" >}}
 https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg 400w,
 https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg 200w,
 https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x-1.jpg 100w

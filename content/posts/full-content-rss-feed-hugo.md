@@ -16,7 +16,7 @@ src="https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg"
 width="400"
 height="866"
 alt="rss full content result"
-caption="ตัวอย่างผลลัพธ์" >}}
+caption="รูป: ตัวอย่างผลลัพธ์" >}}
 https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg 400w,
 https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r200x.jpg 200w,
 https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r100x.jpg 100w

@@ -18,7 +18,7 @@ src="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg"
 width="400"
 height="400"
 alt="melon wish rain could stop soon"
-caption="เมล่อนนั่งรอฝนหยุด" >}}
+caption="รูป: เมล่อนนั่งรอฝนหยุด" >}}
 https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg 400w,
 https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r200x.jpg 200w,
 https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg 100w
