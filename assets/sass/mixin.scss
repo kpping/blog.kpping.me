@@ -1,22 +1,84 @@
-$screen-sm-min: 390px;
-$screen-md-min: 680px;
+$outer-background-color: #fbf8f3;
+$base-background-color: #fcfcfc;
+$post-meta-content-background-color: #f7c78034;
+$markdown-body-border-color: #d7dde3;
+$markdown-body-font-color: #494949;
 
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
+$screen-sm: 390px;
+$screen-md: 680px;
+
+$breakpoints: (
+  "sm": (
+    min-width: $screen-sm,
+  ),
+  "md": (
+    min-width: $screen-md,
+  ),
+) !default;
+
+// Mixin to manage responsive breakpoints
+// @author Kitty Giraudel
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
 
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
+// Computes a top-shadow for a card effect.
+// @param {Number} $depth - depth level
+// @return {List}
+@function top-shadow($depth) {
+  $primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;
+  $blur: nth(1.5 3 10 14 19, $depth) * 4px;
+  $color: rgba(black, nth(0.12 0.16 0.19 0.25 0.3, $depth));
+
+  @return 0 $primary-offset $blur $color;
 }
 
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
-  @if $inset {
-    box-shadow: inset $top $left $blur $color;
+// Computes a bottom-shadow for a card effect.
+// @param {Number} $depth - depth level
+// @return {List}
+@function bottom-shadow($depth) {
+  $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
+  $blur: nth(1 3 3 5 6, $depth) * 4px;
+  $color: rgba(black, nth(0.24 0.23 0.23 0.22 0.22, $depth));
+
+  @return 0 $primary-offset $blur $color;
+}
+
+// Gives a card depth effect.
+// @param {Number} $depth - depth level (between 1 and 5)
+// @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+// @requires {function} top-shadow
+// @requires {function} bottom-shadow
+@mixin card($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
   } @else {
-    box-shadow: $top $left $blur $color;
+    box-shadow: bottom-shadow($depth), top-shadow($depth);
+  }
+}
+
+@mixin curve($level) {
+  @if $level < 1 {
+    border-radius: 0;
+  } @else if $level > 5 {
+    @warn "Invalid $level `#{$level}` for mixin `curve`.";
+  } @else {
+    border-radius: $level * 2px;
   }
 }
