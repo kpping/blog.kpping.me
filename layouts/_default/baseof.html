@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <title>{{ .Title }}</title>
 
-  <title>{{- .Title -}}</title>
+    <meta
+      name="description"
+      content="{{ default .Site.Params.description (.Page.Summary | plainify) }}
+      "
+    />
 
-  <meta name="description" content="{{ default .Site.Params.description (.Page.Summary | plainify) }}" />
+    <meta
+      name="author"
+      content="{{ default .Site.Params.author (.Params.author) }}"
+    />
 
-  <meta name="author" content="{{ default .Site.Params.author (.Params.author) }}" />
+    <meta name="copyright" content="{{ .Site.Title }}" />
 
-  <meta name="copyright" content="{{ .Site.Title }}" />
+    <meta name="license" content="{{ .Site.Copyright }}" />
 
-  <meta name="license" content="{{ .Site.Copyright }}" />
+    {{ $keywords := default .Site.Params.homepageKeywords (.Params.tags) }}
+    <meta name="keywords" content="{{ delimit $keywords ", " }}" />
 
-  {{ $keywords := default .Site.Params.homepageKeywords (.Params.tags)}}
-  <meta name="keywords" content='{{ delimit $keywords ", " }}' />
+    {{ partial "jsonld" . }}
 
-  {{ partial "jsonld" . }}
+    {{ range .AlternativeOutputFormats -}}
+      <link
+        rel="{{ .Rel }}"
+        type="{{ .MediaType.Type }}"
+        href="{{ .Permalink }}"
+        title="{{ $.Site.Title }}"
+      />
+    {{ end }}
 
-  {{/* {{ with resources.Get "sass/main.scss" | toCSS | minify }}
-  <style>
-    {
-        {
-        .Content | safeCSS
-      }
-    }
-  </style>
-  {{ end }} */}}
 
-  {{ range .AlternativeOutputFormats -}}
-    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
-    {{/*  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}  */}}
-  {{ end }}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.0.0/github-markdown-light.min.css"
+      integrity="sha512-2ZxkJRe/dlKUknBZJNP93bh08JvvuvL+fR6I3IqZ4tnAvNQ0D56+LVg+DvE/S/Ir4J/6lxBu/Xye1z243BEa1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.0.0/github-markdown-light.min.css"
-    integrity="sha512-2ZxkJRe/dlKUknBZJNP93bh08JvvuvL+fR6I3IqZ4tnAvNQ0D56+LVg+DvE/S/Ir4J/6lxBu/Xye1z243BEa1Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+    <link
+      rel="stylesheet"
+      href="{{ $mainStyle.RelPermalink }}"
+      integrity="{{ $mainStyle.Data.Integrity }}"
+    />
+  </head>
 
-  {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512"
-  }}
-  <link rel="stylesheet" href="{{ $mainStyle.RelPermalink }}" integrity="{{ $mainStyle.Data.Integrity }}">
-</head>
-
-<body>
-  <div id="base-container" class="markdown-body">
-    {{ partial "base-header" . }}
-    {{ block "main" . }}{{ end }}
-    <hr class="thin-line" />
-    {{ partial "base-footer" . }}
-  </div>
-</body>
-
+  <body>
+    <div id="base-container" class="markdown-body">
+      {{ partial "base-header" . }}
+      {{ block "main" . }}{{ end }}
+      <hr class="thin-line" />
+      {{ partial "base-footer" . }}
+    </div>
+  </body>
 </html>

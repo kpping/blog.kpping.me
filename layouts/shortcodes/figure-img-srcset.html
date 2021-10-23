@@ -17,7 +17,7 @@
         {{ $media := index $source 1 }}
         <source
           srcset="{{ $srcset }}"
-          media='(min-width: {{ replace $media "w" "px" }})'
+          media="(min-width: {{ replace $media "w" "px" }})"
         />
       {{ end }}
       <img
