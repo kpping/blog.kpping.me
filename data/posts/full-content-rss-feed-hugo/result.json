@@ -1,0 +1,23 @@
+{
+  "data_type": "json-figure-picture",
+  "href": "https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r768x.jpg",
+  "src": "https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg",
+  "alt": "rss full content result",
+  "caption": "รูป: ตัวอย่างผลลัพธ์",
+  "height": "400",
+  "width": "866",
+  "source": [
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg",
+      "media": "(min-width: 400px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r200x.jpg",
+      "media": "(min-width: 200px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r100x.jpg",
+      "media": "(min-width: 100px)"
+    }
+  ]
+}

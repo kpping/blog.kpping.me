@@ -1,0 +1,23 @@
+{
+  "data_type": "json-figure-picture",
+  "href": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r768x.jpg",
+  "src": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg",
+  "alt": "order type in streaming menu",
+  "caption": "รูป: ชนิดคำสั่งซื้อขาย",
+  "height": "400",
+  "width": "866",
+  "source": [
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg",
+      "media": "(min-width: 400px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg",
+      "media": "(min-width: 200px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x-1.jpg",
+      "media": "(min-width: 100px)"
+    }
+  ]
+}

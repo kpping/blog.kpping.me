@@ -8,19 +8,7 @@ tags: [gohugo, hugo, rss, feed, full]
 
 โดยปกติแล้ว RSS Template ของ Hugo จะโชว์บทความด้วย `.Summary` ทำให้ข้อมูลไปโชว์ใน RSS ไม่ครบ หลังจากได้ลองค้นจากหลาย ๆ ที่ พบว่าแก้ไข Template เป็นแบบนี้ได้ข้อมูลครบถ้วน และ แสดงผลได้ถูกต้องที่สุด
 
-<!-- https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r768x.jpg 768w, -->
-
-{{< figure-img-srcset
-href="https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r768x.jpg"
-src="https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg"
-width="400"
-height="866"
-alt="rss full content result"
-caption="รูป: ตัวอย่างผลลัพธ์" >}}
-https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r400x.jpg 400w,
-https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r200x.jpg 200w,
-https://kpping.files.wordpress.com/2021/10/full-content-rss_q85_r100x.jpg 100w
-{{< /figure-img-srcset >}}
+{{< json-figure-picture "/data/posts/full-content-rss-feed-hugo/result.json" >}}
 
 <!--more-->
 
