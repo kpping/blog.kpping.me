@@ -12,16 +12,6 @@ tags: [logo, โลโก้, melon, เมล่อน]
 
 เมล่อนไม่ชอบฝน เพราะจะไปเดินเล่นไม่ได้ เลยเป็นที่มาของรูปนี้
 
-{{< figure-img-srcset
-href="https://kpping.files.wordpress.com/2021/10/logo_v1.png"
-src="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg"
-width="400"
-height="400"
-alt="melon wish rain could stop soon"
-caption="รูป: เมล่อนนั่งรอฝนหยุด" >}}
-https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg 400w,
-https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r200x.jpg 200w,
-https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg 100w
-{{< /figure-img-srcset >}}
+{{< json-figure-picture "/data/posts/first-logo/melon.json" >}}
 
 <!--more-->
