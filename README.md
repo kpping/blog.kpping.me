@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.1.3
+1.1.4
 
 ## Change logs
 
 | Version | Detail                                                                          |
 | ------- | ------------------------------------------------------------------------------- |
+| 1.1.4   | implement json input data                                                       |
 | 1.1.3   | fix related content style, use .Plain instead of .Summary in rss                |
 | 1.1.2   | bundle style to reduce http request                                             |
 | 1.1.1   | tuning site score                                                               |
