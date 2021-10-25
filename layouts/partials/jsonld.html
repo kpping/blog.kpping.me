@@ -22,7 +22,7 @@
   "name": {{ .Title }},
   "headline": {{ .Title }},
   "alternativeHeadline": {{ .File.BaseFileName }},
-  "description": {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage }}{{ trim .Summary " " }}{{ end }}{{ end }},
+  "description": {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage }}{{ .Plain }}{{ end }}{{ end }},
   "inLanguage": "th",
   "isFamilyFriendly": true,
   "mainEntityOfPage": {
