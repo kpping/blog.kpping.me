@@ -28,7 +28,7 @@
     <source srcset="{{ .srcset }}" media="{{ .media }}" />
   {{ end }}
   <img
-    loading="lazy"
+    loading="{{ $data.loading }}"
     width="{{ $data.width }}"
     height="{{ $data.height }}"
     src="{{ $data.src }}"
