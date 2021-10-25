@@ -6,17 +6,18 @@
   "caption": "รูป: ชนิดคำสั่งซื้อขาย",
   "height": "400",
   "width": "866",
+  "loading": "lazy",
   "source": [
     {
       "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg",
       "media": "(min-width: 400px)"
     },
     {
-      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg",
+      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r400x-1.jpg 2x, https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg 1x",
       "media": "(min-width: 200px)"
     },
     {
-      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x-1.jpg",
+      "srcset": "https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r200x-1.jpg 2x, https://kpping.files.wordpress.com/2021/05/order-type-streaming-menu_q85_r100x-1.jpg 1x",
       "media": "(min-width: 100px)"
     }
   ]
