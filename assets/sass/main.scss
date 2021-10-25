@@ -161,6 +161,11 @@ body {
     text-align: center;
   }
 
+  li {
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+  }
+
   @include respond-to("md") {
     margin-left: 2em;
     padding-left: 0.5em;
