@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.1.5
+1.1.6
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 1.1.6   | use 2x, 1x img, able to adjust loading attr from json                            |
 | 1.1.5   | fix missing disqus count script, include newer and categories in related content |
 | 1.1.4   | implement json input data                                                        |
 | 1.1.3   | fix related content style, use .Plain instead of .Summary in rss                 |
