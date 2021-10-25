@@ -15,23 +15,36 @@
   "
 >
   <picture>
-    {{/* too big */}}
-    {{/* <source srcset="https://img.youtube.com/vi/{{ $id }}/maxresdefault.jpg"
-    media="(min-width: 1280px)" /> */}}
     <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/sddefault.jpg"
+      srcset="https://img.youtube.com/vi/{{ $id }}/maxresdefault.jpg"
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="
+        https://img.youtube.com/vi/{{ $id }}/maxresdefault.jpg 2x,
+        https://img.youtube.com/vi/{{ $id }}/sddefault.jpg     1x
+      "
       media="(min-width: 640px)"
     />
     <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg"
+      srcset="
+        https://img.youtube.com/vi/{{ $id }}/maxresdefault.jpg 2x,
+        https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg     1x
+      "
       media="(min-width: 480px)"
     />
     <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/mqdefault.jpg"
+      srcset="
+        https://img.youtube.com/vi/{{ $id }}/sddefault.jpg 2x,
+        https://img.youtube.com/vi/{{ $id }}/mqdefault.jpg 1x
+      "
       media="(min-width: 320px)"
     />
     <source
-      srcset="https://img.youtube.com/vi/{{ $id }}/default.jpg"
+      srcset="
+        https://img.youtube.com/vi/{{ $id }}/mqdefault.jpg 2x,
+        https://img.youtube.com/vi/{{ $id }}/default.jpg   1x
+      "
       media="(min-width: 120px)"
     />
     <img
