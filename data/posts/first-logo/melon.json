@@ -6,7 +6,7 @@
   "caption": "รูป: เมล่อนนั่งรอฝนหยุด",
   "height": "400",
   "width": "400",
-  "loading": "auto",
+  "loading": "lazy",
   "source": [
     {
       "srcset": "https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg",
