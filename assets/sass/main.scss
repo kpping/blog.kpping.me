@@ -149,6 +149,7 @@ body {
 }
 
 #disqus_thread {
+  min-height: 100px;
   flex: 1;
   flex-basis: 0;
 }
