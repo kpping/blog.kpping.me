@@ -12,3 +12,12 @@ title = "blog.kpping.me"
   description = "My simple micro blog."
   homepageKeywords = ["blog.kpping.me", "blog", "kpping"]
   logo = "/apple-icon-114x114.png"
+
+[related]
+  includeNewer = true
+[[related.indices]]
+  name = 'tags'
+  weight = 100
+[[related.indices]]
+  name = 'categories'
+  weight = 90
