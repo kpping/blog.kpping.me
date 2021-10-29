@@ -1,7 +1,7 @@
 ---
 title: "ใช้ cURL โหลดไฟล์จาก GitHub Release"
 date: 2021-10-29T23:12:18+07:00
-draft: true
+draft: false
 categories: [geek]
 tags: [curl, github, release]
 ---
