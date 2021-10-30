@@ -6,9 +6,9 @@ categories: [geek]
 tags: [gohugo, hugo, ubuntu, install, binary]
 ---
 
-เมื่อครั้งที่แล้วผมได้แนะนำการ [ติดตั้ง Hugo บน Ubuntu ผ่าน Snap](/posts/install-hugo-on-ubuntu) ไปแล้ว
+เมื่อครั้งที่แล้วผมได้แนะนำการ [ติดตั้ง Hugo บน Ubuntu ผ่าน Snap](/posts/install-hugo-on-ubuntu) ไปแล้ว คราวนี้ผมจะมาเขียนวิธีการติดตั้งโดยใช้ Binary กันบ้าง ซึ่งเหมาะกับคนที่ไม่สะดวกใช้ Snap (เช่นบน WSL เป็นต้น)
 
-คราวนี้ผมจะมาเขียนวิธีการติดตั้งโดยใช้ Binary กันบ้าง ซึ่งเหมาะกับคนที่ไม่สะดวกใช้ Snap (เช่นบน WSL เป็นต้น)
+<!--more-->
 
 ```bash
 # download binary (https://github.com/gohugoio/hugo/releases)
