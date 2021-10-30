@@ -60,6 +60,11 @@ body {
   text-align: right;
 }
 
+// remove bluering on safari
+.post-meta-summary:focus {
+  outline: none;
+}
+
 .post-meta-content {
   background-color: $post-meta-content-background-color;
   padding: 0.5em;
