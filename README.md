@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.1.10
+1.1.11
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 1.1.11  | remove bluering when click summary on safari browser                             |
 | 1.1.10  | use bold font weight for related content title                                   |
 | 1.1.9   | revert to 1.1.7, min height cause problem with flex component                    |
 | 1.1.8   | fix missing min height for disqus component                                      |
