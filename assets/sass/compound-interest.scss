@@ -1,0 +1,26 @@
+@import "./mixin.scss";
+
+#compound-interest {
+  max-width: $screen-sm;
+  padding: 1em;
+  background-color: $outer-background-color;
+  border: 1px solid $markdown-body-border-color;
+  @include curve(3);
+  @include card(1);
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  #result {
+    margin-top: 1em;
+    text-align: center;
+    color: green;
+  }
+}

@@ -1,0 +1,37 @@
+{{ $compoundInterestStyle := resources.Get "sass/compound-interest.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+<link
+  rel="stylesheet"
+  href="{{ $compoundInterestStyle.RelPermalink }}"
+  integrity="{{ $compoundInterestStyle.Data.Integrity }}"
+/>
+
+<script>
+  function calculate() {
+    const initial = document.getElementById("initial").value;
+    const interest = document.getElementById("interest").value;
+    const year = document.getElementById("year").value;
+
+    const result = initial * (1 + interest / 100) ** year;
+
+    document.getElementById("result").innerText = parseFloat(
+      result.toFixed(2)
+    ).toLocaleString("en", { useGrouping: true });
+  }
+</script>
+
+<form name="compound-interest" id="compound-interest" onsubmit="return false;">
+  <p class="title">โปรแกรมคำนวณดอกเบี้ยทบต้นอย่างง่าย</p>
+
+  <label for="initial">เงินเริ่มต้น: </label>
+  <input type="number" name="initial" id="initial" />
+
+  <label for="interest">ดอกเบี้ย %: </label>
+  <input type="number" name="interest" id="interest" />
+
+  <label for="year">จำนวนปี: </label>
+  <input type="number" name="year" id="year" />
+
+  <button onclick="calculate()">คำนวณ</button>
+
+  <p id="result"></p>
+</form>
