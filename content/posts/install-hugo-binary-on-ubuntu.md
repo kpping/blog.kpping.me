@@ -11,14 +11,14 @@ tags: [gohugo, hugo, ubuntu, install, binary]
 <!--more-->
 
 ```bash
-# download binary (https://github.com/gohugoio/hugo/releases)
+# download latest binary (https://github.com/gohugoio/hugo/releases)
 > curl -OL https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.tar.gz
 
 # extract
 > tar -xf hugo_extended_0.88.1_Linux-64bit.tar.gz
 
-# move to executable path
-> sudo mv hugo /usr/local/bin/
+# move to executable path (check with echo $PATH)
+> mv hugo /usr/local/bin/
 
 ## reload shell ##
 
