@@ -1,5 +1,5 @@
 ---
-title: "ติดตั้งฟอนต์ บน Fedora 35"
+title: "ติดตั้งฟอนต์ใหม่บน Fedora 35 ผ่าน Command Line"
 date: 2021-11-15T20:21:20+07:00
 draft: false
 categories: [geek]
