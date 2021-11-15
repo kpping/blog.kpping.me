@@ -1,5 +1,5 @@
 ---
-title: "ทดลองปิดระบบป้องกัน Spectre และ Meltdown Fedora 35 (mitigations=off)"
+title: "ทดลองปิดระบบป้องกัน Spectre และ Meltdown บน Fedora 35 (mitigations=off)"
 date: 2021-11-15T12:17:33+07:00
 draft: false
 categories: [geek]
