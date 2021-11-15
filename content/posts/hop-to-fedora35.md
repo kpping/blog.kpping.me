@@ -6,7 +6,7 @@ categories: [geek]
 tags: [liunx, distro, hopping, fedora]
 ---
 
-Ubuntu 21.04 ที่ใช้ตอนนี้กำลังจะ EOL แล้ว เลย ทดลองเปลี่ยนมาใช้ Fedora 35 แทน (ไม่ชอบ Upgrade OS ชอบ Clean Install มากกว่า)
+Ubuntu 21.04 ที่ใช้ตอนนี้กำลังจะ EOL แล้ว เลยทดลองเปลี่ยนมาใช้ Fedora 35 แทน (ไม่ชอบ Upgrade OS ชอบ Clean Install มากกว่า)
 
 <!--more-->
 
