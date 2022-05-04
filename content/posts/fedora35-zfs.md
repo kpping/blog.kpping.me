@@ -1,7 +1,7 @@
 ---
 title: "ZFS หลุดบ่อยบน Fedora 35"
 date: 2022-05-04T09:57:53+07:00
-draft: true
+draft: false
 categories: [geek]
 tags: [liunx, zfs, fedora]
 ---
