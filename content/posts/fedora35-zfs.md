@@ -31,14 +31,14 @@ sudo make install
 
 # looking good ?, load it
 sudo modprobe -v zfs
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/spl/spl.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/nvpair/znvpair.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zcommon/zcommon.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/icp/icp.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/avl/zavl.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/lua/zlua.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zstd/zzstd.ko 
-# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/unicode/zunicode.ko 
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/spl/spl.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/nvpair/znvpair.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zcommon/zcommon.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/icp/icp.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/avl/zavl.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/lua/zlua.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zstd/zzstd.ko
+# insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/unicode/zunicode.ko
 # insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zfs/zfs.ko
 
 # check
