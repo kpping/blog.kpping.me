@@ -41,7 +41,7 @@ sudo modprobe -v zfs
 # insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/unicode/zunicode.ko
 # insmod /lib/modules/5.17.5-200.fc35.x86_64/extra/zfs/zfs.ko
 
-# check
+# check existence and version
 which zfs
 # /usr/local/sbin/zfs
 zfs --version
@@ -51,4 +51,21 @@ zfs --version
 # import lost pool (depend on your name, in my case it is "tank")
 sudo zpool import
 sudo zpool import tank
+```
+
+## Edited 2022-05-16
+
+วันนี้ได้ทำการอัพเดต Kernel เป็น `Linux 5.17.6-200.fc35.x86_64 x86_64` ทำให้ ZFS โหลดไม่ขึ้นอีกแล้ว
+
+จึงได้ลองหาวิธีอื่นนอกจาก Build จาก Source Code ทุกครั้ง ทำให้พบว่าถ้าเราเคย Build แล้ว เราสามารถข้าม Step มา Install ได้เลย
+
+```bash
+# check, if exist then install
+ls /var/lib/dkms/zfs/2.1.4/source/dkms.conf
+# /var/lib/dkms/zfs/2.1.4/source/dkms.conf
+
+# install
+sudo dkms install zfs/2.1.4
+
+# then continue on modprobe and import lost pool
 ```
