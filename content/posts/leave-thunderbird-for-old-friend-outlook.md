@@ -1,7 +1,7 @@
 ---
 title: "เลิกใช้ Thunderbird กลับไปหา Outlook บน Windows"
 date: 2022-05-17T09:13:14+07:00
-draft: true
+draft: false
 categories: [ทั่วไป]
 tags: [thunderbird, outlook, windows]
 ---
