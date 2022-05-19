@@ -69,7 +69,7 @@ Partition[0] :   1953523120 sectors at         2048 (type fd)
 >> echo '/dev/md0 /mnt/raid1 ext4 defaults 0 0' | sudo tee -a /etc/fstab
 
 # update mdadm config
->> sudo mdadm --detail --scan --verbose | sudo tee -a /etc/mdadm/mdadm.conf
+>> sudo mdadm --detail --scan --verbose | sudo tee /etc/mdadm.conf
 
 # check RAID status
 >> sudo mdadm --detail /dev/md0
