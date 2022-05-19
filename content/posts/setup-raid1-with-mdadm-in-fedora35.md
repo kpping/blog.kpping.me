@@ -63,6 +63,7 @@ Partition[0] :   1953523120 sectors at         2048 (type fd)
 >> sudo mdadm --create /dev/md0 --level=mirror --raid-devices=2 /dev/sd[a-b]1
 >> sudo mkfs.ext4 /dev/md0
 >> sudo mkdir /mnt/raid1 # change "raid1" to whatever name you like
+>> sudo mount /dev/md0 /mnt/raid1/
 
 # append "/dev/md0                /mnt/raid1              ext4    defaults        0 0" to /etc/fstab
 >> echo '/dev/md0 /mnt/raid1 ext4 defaults 0 0' | sudo tee -a /etc/fstab
