@@ -8,6 +8,8 @@ tags: [linux, raid1, mdadm, fedora]
 
 ทดลองเปลี่ยนจาก `zfs` มาใช้ `mdadm` ในการทำ RAID 1 (Mirror) เพื่อเก็บข้อมูล
 
+{{< json-figure-picture "/data/posts/setup-raid1-with-mdadm-in-fedora35/result.json" >}}
+
 <!--more-->
 
 1. โดยอันดับแรกหลังจากสำรองข้อมูลขึ้น Cloud เรียบร้อยก็จับ HDD ทั้ง 2 ลูกมา Format ด้วยโปรแกรม `Disks` บน Fedora โดยให้เลือกเป็น `No partitioning (Empty)`
