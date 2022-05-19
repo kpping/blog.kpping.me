@@ -10,6 +10,8 @@ tags: [liunx, keychron, keyboard, k8, fedora]
 
 Keychron K8 ดูจะเป็นตัวเลือกที่เหมาะสมกับงบที่ตั้งไว้ที่สุด เลยลั่นใน Shopee มาทดลอง
 
+{{< json-figure-picture "/data/posts/keychron-k8-in-fedora35/k8.json" >}}
+
 ตัวคีย์บอร์ดถ้าใช้บน Windows หรือ MacOS นั้นไม่ต้องทำอะไรเพิ่ม แต่บน Linux ต้องมีการ Config นิดหน่อย ถึงจะ (1.) ใช้งาน Function Keys ได้ปกติ และ (2.) เชื่อมต่อด้วย Bluetooth ได้อย่างรวดเร็ว ไม่หลุดบ่อย
 
 <!--more-->
