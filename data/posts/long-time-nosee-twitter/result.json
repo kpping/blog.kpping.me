@@ -1,0 +1,24 @@
+{
+  "data_type": "json-figure-picture",
+  "href": "https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r768x.jpg",
+  "src": "https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r400x.jpg",
+  "alt": "rss full content result",
+  "caption": "รูป: หน้าแรก Twitter",
+  "height": "201",
+  "width": "400",
+  "loading": "lazy",
+  "source": [
+    {
+      "srcset": "https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r400x.jpg",
+      "media": "(min-width: 400px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r400x.jpg 2x, https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r200x.jpg 1x",
+      "media": "(min-width: 200px)"
+    },
+    {
+      "srcset": "https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r200x.jpg 2x, https://kpping.files.wordpress.com/2022/09/twitter_frontpage_q85_r100x.jpg 1x",
+      "media": "(min-width: 100px)"
+    }
+  ]
+}
