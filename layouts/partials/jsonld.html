@@ -12,8 +12,8 @@
 }
 </script>
 {{ else if .IsPage }}
-{{ $author := default .Site.Params.author (.Params.author) }}
-{{ $organization := .Site.Title }}
+  {{ $author := default .Site.Params.author (.Params.author) }}
+  {{ $organization := .Site.Title }}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",

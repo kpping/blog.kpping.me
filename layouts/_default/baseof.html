@@ -120,17 +120,26 @@
 
     <!-- prettier-ignore -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ML5M889S6"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8ML5M889S6"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-8ML5M889S6');
+      gtag("config", "G-8ML5M889S6");
     </script>
 
     <!-- prettier-ignore -->
     <!-- Comment Count - Disqus -->
-    <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
+    <script
+      id="dsq-count-scr"
+      src="//{{ .Site.DisqusShortname }}.disqus.com/count.js"
+      async
+    ></script>
   </body>
 </html>
