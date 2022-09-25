@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.1.13
+1.2.0
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 1.2.0   | update build dependencies                                                        |
 | 1.1.13  | use google analytic 4                                                            |
 | 1.1.12  | custom robots.txt to add sitemap                                                 |
 | 1.1.11  | remove bluering when click summary on safari browser                             |
