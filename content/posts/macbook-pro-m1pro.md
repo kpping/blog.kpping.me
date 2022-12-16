@@ -1,7 +1,7 @@
 ---
 title: 'เจอโปรดี ๆ เลยจัด Macbook Pro M1 16" มาใช้เป็นเครื่องส่วนตัว'
 date: 2022-12-16T21:50:50+07:00
-draft: true
+draft: false
 categories: [ทั่วไป]
 tags: [apple, macbook, m1]
 ---
