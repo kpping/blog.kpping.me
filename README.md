@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.2.0
+1.3.0
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 1.3.0   | update build dependencies                                                        |
 | 1.2.0   | update build dependencies                                                        |
 | 1.1.13  | use google analytic 4                                                            |
 | 1.1.12  | custom robots.txt to add sitemap                                                 |
