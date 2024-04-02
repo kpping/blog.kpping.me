@@ -14,7 +14,7 @@
     const result = initial * (1 + interest / 100) ** year;
 
     document.getElementById("result").innerText = parseFloat(
-      result.toFixed(2)
+      result.toFixed(2),
     ).toLocaleString("en", { useGrouping: true });
   }
 </script>
