@@ -6,7 +6,7 @@
     💬
     <a
       href="{{ .RelPermalink }}#disqus_thread"
-      data-disqus-identifier="{{ .Page.File.UniqueID }}"
+      data-disqus-identifier="{{ with .Page.File }}{{ .UniqueID }}{{ end }}"
       >ความคิดเห็น: 0</a
     >
     &nbsp; 🏷️
