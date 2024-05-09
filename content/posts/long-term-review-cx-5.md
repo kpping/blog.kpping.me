@@ -1,7 +1,7 @@
 ---
 title: "รีวิว Mazda CX-5 จากผู้ใช้งานจริง 6 ปี++"
 date: 2024-05-08T15:20:32+07:00
-draft: true
+draft: false
 categories: [ทั่วไป]
 tags: [mazda, cx5, มาสด้า, cx-5]
 ---
