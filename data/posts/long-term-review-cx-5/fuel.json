@@ -1,0 +1,16 @@
+{
+  "data_type": "json-figure-picture",
+  "href": "https://kpping.files.wordpress.com/2024/05/img_4956.jpg",
+  "src": "https://kpping.files.wordpress.com/2024/05/img_4956.jpg",
+  "alt": "great fuel consumption rate 22 km./liter",
+  "caption": "รูป: ประหนัดน้ำมัน 22 กม./ลิตร",
+  "height": "400",
+  "width": "400",
+  "loading": "lazy",
+  "source": [
+    {
+      "srcset": "https://kpping.files.wordpress.com/2024/05/img_4956.jpg",
+      "media": "(min-width: 100px)"
+    }
+  ]
+}
