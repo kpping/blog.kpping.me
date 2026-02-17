@@ -23,7 +23,8 @@
   ]
   }
   */}}
-{{ $data := getJSON . }}
+{{ $json := resources.Get . }}
+{{ $data := $json | transform.Unmarshal }}
 <figure class="json-figure-picture">
   <a href="{{ $data.href }}">
     {{ partial "input-json/json-picture" . }}

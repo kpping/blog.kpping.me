@@ -1,4 +1,4 @@
-{{ $compoundInterestStyle := resources.Get "sass/compound-interest.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $compoundInterestStyle := resources.Get "sass/compound-interest.scss" | css.Sass | resources.Minify | resources.Fingerprint "sha512" }}
 <link
   rel="stylesheet"
   href="{{ $compoundInterestStyle.RelPermalink }}"

@@ -22,7 +22,8 @@
   ]
   }
   */}}
-{{ $data := getJSON . }}
+{{ $json := resources.Get . }}
+{{ $data := $json | transform.Unmarshal }}
 <picture>
   {{ range $data.source }}
     <source srcset="{{ .srcset }}" media="{{ .media }}" />

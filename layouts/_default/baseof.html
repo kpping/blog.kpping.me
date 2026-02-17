@@ -78,8 +78,8 @@
       />
     {{ end }}
 
-    {{ $criticalStyle := resources.Get "sass/critical.scss" | resources.ToCSS }}
-    {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS }}
+    {{ $criticalStyle := resources.Get "sass/critical.scss" | css.Sass }}
+    {{ $mainStyle := resources.Get "sass/main.scss" | css.Sass }}
     {{ $bundleStyle := (slice $criticalStyle $mainStyle | resources.Concat "sass/bundle.css") | resources.Minify |
       resources.Fingerprint "sha512"
     }}
@@ -138,7 +138,7 @@
     <!-- Comment Count - Disqus -->
     <script
       id="dsq-count-scr"
-      src="//{{ .Site.DisqusShortname }}.disqus.com/count.js"
+      src="//{{ .Site.Config.Services.Disqus.Shortname }}.disqus.com/count.js"
       async
     ></script>
   </body>
