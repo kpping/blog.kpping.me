@@ -4,7 +4,7 @@ description: "หลังจาก Hugo ได้ทำการ Breaking chang
 pubDate: "May 05 2026"
 ---
 
-# Bye bye, Hugo. Hello, Astro.
+### Bye bye, Hugo. Hello, Astro.
 
 หลังจาก Hugo ได้ทำการ Breaking change ในหลาย ๆ ส่วน ถ้าจะแก้ไข ก็แทบจะเรียกได้ว่า เขียนใหม่กันเลยทีเดียว 😂 ไหน ๆ แล้ว เลยถือโอกาสเปลี่ยน Stack จาก Hugo มาใช้ Astro ซะเลย
 

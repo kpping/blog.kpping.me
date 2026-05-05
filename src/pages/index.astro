@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_AUTHOR } from "../consts";
 ---
 
 <!doctype html>
@@ -40,18 +40,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
           <!-- https://kpping.files.wordpress.com/2021/10/logo_v1.png -->
         </picture>
       </p>
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp; ในยุคที่ Trend การบริโภค Content บน Internet
+      <p style="text-align: justify;">
+        &nbsp; &nbsp; &nbsp; &nbsp; ในยุคที่ Trend การบริโภค Content บน Internet
         เปลี่ยนไป หลาย ๆ คนเปลี่ยนไปดู Video มากกว่าอ่านบทความ
         เวลาอ่านก็ไม่ได้เข้า Website/RSS โดยตรงแล้ว แต่อ่านสรุปจาก AI หรือ Post
         ใน Social Network แทน
       </p>
-      <p>
+      <p style="text-align: justify;">
         ในช่วงที่ผ่านมา ผมรู้สึกว่าการเชื่อมต่อกันผ่าน Website ส่วนตัว
         เจือจางลงไปเยอะ เลยอยากเปลี่ยน Concept การเขียน Blog นี้
         ให้เน้นไปที่เหมือนการจดไดอารี่แทน ซึ่งน่าสนุกและท้ายทายมากกว่า
       </p>
-      <p>
+      <p style="text-align: justify;">
         Blog นี้เขียนแบบสบาย ๆ เน้นความเรียบง่าย ดูแลง่าย
         (แม้จะยกเครื่องใหม่หลายครั้ง) ผมเก็บ Contents ที่มีคนเข้าอ่านเยอะ ๆ ไว้
         แต่หลาย ๆ ครั้ง Tools ที่ใช้ Breaking Change เยอะ เลยขี้เกียจ Migrate
@@ -60,6 +60,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
         เคยอ่านแต่หาไม่เจอแล้ว แจ้งได้นะครับ จะนำกลับมาลงให้ครับ
       </p>
       <p>❤️ Happy Reading & Writing 📝 ครับ</p>
+      <p style="text-align: right;">{SITE_AUTHOR}</p>
     </main>
     <Footer />
   </body>
