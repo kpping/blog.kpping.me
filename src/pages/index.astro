@@ -1,0 +1,51 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>สวัสดีครับ,</h1>
+      <p>
+        Blog นี้เขียนแบบสบาย ๆ ยกเครื่องใหม่หลายครั้ง พยายามจะเก็บ Contents
+        ที่มีคนเข้าอ่านเยอะ ๆ ไว้ แต่หลายครั้ง Tools ที่ใช้ Breaking Change เยอะ
+        เลยขี้เกียจ Transfer/Migrate ให้อ่านได้ต่อ หากอยากได้ข้อมูลไหนที่เคยลง
+        เคยอ่านแต่หาไม่เจอแล้ว แจ้งได้นะครับ จะพยายามนำกลับมาลงให้ครับ
+      </p>
+      <p style="text-align: center;">
+        <picture>
+          <source
+            srcset="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg"
+            media="(min-width: 400px)"
+          />
+          <source
+            srcset="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg 2x, https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r200x.jpg 1x"
+            media="(min-width: 200px)"
+          />
+          <source
+            srcset="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r200x.jpg 2x, https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r100x.jpg 1x"
+            media="(min-width: 100px)"
+          />
+          <img
+            src="https://kpping.files.wordpress.com/2021/10/logo_v1_q85_r400x.jpg"
+            alt="melon wish rain could stop soon"
+            width="400"
+            height="400"
+            loading="lazy"
+            decoding="async"
+          />
+          <!-- https://kpping.files.wordpress.com/2021/10/logo_v1.png -->
+        </picture>
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

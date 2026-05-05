@@ -1,0 +1,63 @@
+---
+import { SITE_COPYRIGHT, SITE_DESCRIPTION } from "../consts";
+const today = new Date();
+---
+
+<footer>
+  &copy; {today.getFullYear()} | <a href="/">{SITE_COPYRIGHT}</a> | {
+    SITE_DESCRIPTION
+  } | <a
+    id="webring"
+    href="https://webring.wonderful.software#blog.kpping.me"
+    title="วงแหวนเว็บ"
+    target="_blank"
+    rel="noreferrer"
+    ><img
+      alt="วงแหวนเว็บ"
+      loading="lazy"
+      width="16"
+      height="16"
+      src="https://webring.wonderful.software/webring.svg"
+    /></a
+  > | <a
+    id="netlify-status"
+    href="https://app.netlify.com/sites/xenodochial-roentgen-5bbc18/deploys"
+    title="Site Status"
+    target="_blank"
+    rel="noreferrer"
+    ><img
+      alt="site build status badge"
+      loading="lazy"
+      width="130"
+      src="https://api.netlify.com/api/v1/badges/b37e842c-ff0b-48d0-a0ce-4f9018074209/deploy-status"
+    /></a
+  >
+</footer>
+<style>
+  @keyframes webring-rotate360deg {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  footer {
+    padding: 2em 1em 6em 1em;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray));
+    text-align: center;
+  }
+  #webring {
+    position: relative;
+    top: 3px;
+
+    img {
+      animation: webring-rotate360deg 1e3ms infinite ease-in-out;
+    }
+  }
+  #netlify-status {
+    position: relative;
+    top: 5px;
+  }
+</style>

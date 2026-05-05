@@ -6,12 +6,13 @@ My simple micro blog.
 
 ## Version
 
-1.4.0
+2.0.0
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 2.0.0   | transfer to astro                                                                |
 | 1.4.0   | update build dependencies                                                        |
 | 1.3.2   | update build dependencies, fix bug due to new version of dependencies            |
 | 1.3.1   | update build dependencies                                                        |

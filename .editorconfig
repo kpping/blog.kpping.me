@@ -11,6 +11,6 @@ charset = utf-8
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{html,scss,json}]
+[*.{html,css,json,ts,mjs,astro}]
 indent_style = space
 indent_size = 2

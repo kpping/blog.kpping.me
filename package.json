@@ -1,10 +1,10 @@
 {
   "name": "blog.kpping.me",
-  "version": "1.4.0",
+  "type": "module",
+  "version": "2.0.0",
   "description": "My simple micro blog",
-  "scripts": {
-    "test": "npx prettier --check .",
-    "format": "npx prettier --write ."
+  "engines": {
+    "node": ">=22.12.0"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,22 @@
     "url": "https://github.com/kpping/blog.kpping.me/issues"
   },
   "homepage": "https://github.com/kpping/blog.kpping.me#readme",
+  "scripts": {
+    "dev": "astro dev",
+    "format": "prettier --write .",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.2.2",
+    "sharp": "^0.34.3"
+  },
   "devDependencies": {
-    "prettier": "3.1.0",
-    "prettier-plugin-go-template": "0.0.15"
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
