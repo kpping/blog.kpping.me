@@ -5,7 +5,20 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
+    <h2>
+      <a href="/"
+        ><img
+          loading="lazy"
+          src="/favicon-32x32.png"
+          srcset="/apple-icon-60x60.png 2x, /favicon-32x32.png 1x"
+          width="32px"
+          height="32px"
+          alt="logo"
+          style="display: inline-block; position:relative; top: 10px;"
+          fetchpriority="high"
+        />&nbsp;{SITE_TITLE}</a
+      >
+    </h2>
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/posts">Posts</HeaderLink>
