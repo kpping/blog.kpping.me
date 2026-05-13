@@ -1,19 +1,72 @@
 ---
-import { Image } from "astro:assets";
+import { getImage, Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Header from "../components/Header.astro";
+import { SITE_AUTHOR, SITE_LOCALE, SITE_TITLE } from "../consts";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"posts">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const site = Astro.site;
+if (!site) {
+  throw new Error(
+    "Set `site` in astro.config so canonical and social URLs resolve.",
+  );
+}
+
+let socialImageUrl: string | undefined;
+if (heroImage) {
+  const { src } = await getImage({
+    src: heroImage,
+    width: 1200,
+    height: 630,
+  });
+  socialImageUrl = new URL(src, site).href;
+}
+
+const pageTitle = `${title} | ${SITE_TITLE}`;
+const canonicalHref = new URL(Astro.url.pathname, site).href;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
+  author: {
+    "@type": "Person",
+    name: SITE_AUTHOR,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: SITE_TITLE,
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalHref,
+  },
+  ...(socialImageUrl && { image: [socialImageUrl] }),
+};
 ---
 
-<html lang="en">
+<html lang="th">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={pageTitle}
+      description={description}
+      socialImageUrl={socialImageUrl}
+      ogType="article"
+      articlePublishedTime={pubDate}
+      articleModifiedTime={updatedDate}
+      locale={SITE_LOCALE}
+      omitDefaultSocialImage={true}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     <style>
       main {
         width: calc(100% - 2em);
@@ -62,7 +115,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         <div class="hero-image">
           {
             heroImage && (
-              <Image width={1020} height={510} src={heroImage} alt="" />
+              <Image width={1020} height={510} src={heroImage} alt={title} />
             )
           }
         </div>

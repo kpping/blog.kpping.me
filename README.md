@@ -2,16 +2,26 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b37e842c-ff0b-48d0-a0ce-4f9018074209/deploy-status)](https://app.netlify.com/sites/xenodochial-roentgen-5bbc18/deploys)
 
-My simple micro blog.
+My simple micro blog, built with [Astro](https://astro.build). Content lives in `src/content/posts/` as Markdown or MDX. The site ships an RSS feed, an auto-generated sitemap (`@astrojs/sitemap`), and head metadata for search and social previews (Open Graph, Twitter cards, `BlogPosting` JSON-LD, `robots.txt`, Thai `html lang` / `og:locale` where applicable).
+
+## Development
+
+| Command           | Description                   |
+| ----------------- | ----------------------------- |
+| `npm run dev`     | Start the local dev server    |
+| `npm run build`   | Production build to `dist/`   |
+| `npm run preview` | Serve the production build    |
+| `npm run format`  | Format the repo with Prettier |
 
 ## Version
 
-2.0.1
+2.1.0
 
 ## Change logs
 
 | Version | Detail                                                                           |
 | ------- | -------------------------------------------------------------------------------- |
+| 2.1.0   | improve SEO (OG/Twitter, JSON-LD, robots.txt, locale, post titles and image alt) |
 | 2.0.1   | fix rss                                                                          |
 | 2.0.0   | transfer to astro                                                                |
 | 1.4.0   | update build dependencies                                                        |
